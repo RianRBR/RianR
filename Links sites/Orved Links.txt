@@ -1,103 +1,181 @@
-(Categorias de )
+Redirecionamentos Orved&Brock
+
+
+(Categorias de produtos)
+
+
 https://orvedbrock.com.br/categoria/supermercados/
+https://orvedbrock.com.br/segmentos-produtos/supermercados/
+
+
 https://orvedbrock.com.br/categoria/domesticos/
-https://orvedbrock.com.br/categoria/laticinios-acougues-e-frigorificos/  
+https://orvedbrock.com.br/linha/linha-domestica/
+
+
+https://orvedbrock.com.br/categoria/laticinios-acougues-e-frigorificos/
+https://orvedbrock.com.br/segmentos-produtos/acougues-frigorificos-casas-carne/
+
 
 
 (Sobre)
+https://clientes.atratis.com.br/dev/orved-brock/quem-somos/
+
+
 https://orvedbrock.com.br/aorvedebrock/
 https://orvedbrock.com.br/aorvedebrock/tecnologia-italiana/
 https://orvedbrock.com.br/aorvedebrock/orved-no-mundo/
 
 
 (Clientes)
+
+
 https://orvedbrock.com.br/clientes/
+https://orvedbrock.com.br/
 
 Produtos
 
-https://orvedbrock.com.br/produtos/
-https://orvedbrock.com.br/categoria/seladoras-a-vacuo-industriais/
-https://orvedbrock.com.br/categoria/linha-camara-bancada/
-https://orvedbrock.com.br/categoria/linha-camara-gabinete/
-https://orvedbrock.com.br/categoria/linha-camara-vertical/
-https://orvedbrock.com.br/categoria/linha-camara-bandeja/
-https://orvedbrock.com.br/categoria/linha-domestica/
+https://orvedbrock.com.br/produtos/ - ok
 
+https://orvedbrock.com.br/categoria/seladoras-a-vacuo-industriais/
+https://orvedbrock.com.br/produtos
+
+
+https://orvedbrock.com.br/categoria/linha-camara-bancada/
+https://orvedbrock.com.br/linha/linha-camara-bancada/
+
+https://orvedbrock.com.br/categoria/linha-camara-gabinete/
+https://orvedbrock.com.br/linha/linha-camara-gabinete/
+
+https://orvedbrock.com.br/categoria/linha-camara-vertical/
+https://orvedbrock.com.br/linha/linha-camara-vertical/
+
+https://orvedbrock.com.br/categoria/linha-camara-bandeja/
+https://orvedbrock.com.br/linha/linha-camara-bandeja/
+
+https://orvedbrock.com.br/categoria/linha-domestica/
+https://orvedbrock.com.br/linha/linha-domestica/
 
 https://orvedbrock.com.br/categoria/linha-para-desfiar-carnes/
+https://orvedbrock.com.br/categoria/desfiadores-de-frango-e-carnes/
+
 https://orvedbrock.com.br/categoria/linha-para-desfiar-carnes/#
+https://orvedbrock.com.br/categoria/desfiadores-de-frango-e-carnes/
+
 
 
 --
 
 https://orvedbrock.com.br/assistencia-tecnica/
 
-(Categorias blog/novidades)
+(Categorias blog/novidades) - ok
 
 https://orvedbrock.com.br/novidade/
 https://orvedbrock.com.br/categorias/maquinas-a-vacuo/
 https://orvedbrock.com.br/categorias/termocirculadores-profissionais/
 https://orvedbrock.com.br/categorias/desfiadores-frango-carnes/
 
-(Contato)
+(Contato)-ok
 https://orvedbrock.com.br/contatos/
 
-(All produtos)
+
+
+(All produtos) - ok 
 https://orvedbrock.com.br/produtos/
 
 (embalagens)
 https://orvedbrock.com.br/domesticos/embalagens-a-vacuo-linha-domestica/
+https://orvedbrock.com.br/produtos/embalagens-a-vacuo-para-linha-domestica-nylon-poli-gofrado/
 https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/embalagem-vacuo-sous-vide/
+https://orvedbrock.com.br/produtos/embalagens-a-vacuo-para-o-sous-vide-nylon-pp/
 
 (Linha domestica)
 https://orvedbrock.com.br/domesticos/eco-vacuum/
+https://orvedbrock.com.br/produtos/eco-vacuum/
 https://orvedbrock.com.br/domesticos/conservando/
+https://orvedbrock.com.br/produtos/conservando/
+
+
+
+
+
 
 (Linha câmara bancada)
+
+
 https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/mini-speciale/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-mini-speciale/
 https://orvedbrock.com.br/supermercados/vm12/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-12/
 https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm12a/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-12a/
 https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm16/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-16/
 https://orvedbrock.com.br/supermercados/vm17/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-17/
 https://orvedbrock.com.br/supermercados/vm18a/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-18a/
 https://orvedbrock.com.br/supermercados/vm18/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-18/
 https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm53/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-53/
 https://orvedbrock.com.br/supermercados/vm60/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-60/
 https://orvedbrock.com.br/linha-camara-bancada/vm70/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-70/
 
 (Linha câmara Gabinete)
 https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm18h/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-18h/
 https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm53h/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-53h/
 https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm60h/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-60h/
 https://orvedbrock.com.br/linha-camara-gabinete/vm70h/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-70h/
 https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm20/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-20/
 https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm1800/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-1800/
 https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm30/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-30/
 https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/dupla-910/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-dupla-910/
 
-(LINHA CÂMARA VERTICAL)
+(LINHA C MARA VERTICAL)
 
 
 https://orvedbrock.com.br/linha-camara-vertical/vm12ls/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-12ls/
 https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/vm-16ls/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-16ls/
 https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/vm-19hls/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-18hls/
 https://orvedbrock.com.br/linha-camara-vertical/seladora-a-vacuo-vm-53hls/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-vm-60hls/
 
-(LINHA CÂMARA BANDEJA)
+(LINHA C MARA BANDEJA)
 
 https://orvedbrock.com.br/linha-camara-bandeja/seladora-a-vacuo-de-bandeja-e-skin-vgp-combi-skin/
+https://orvedbrock.com.br/produtos
 https://orvedbrock.com.br/linha-camara-bandeja/seladora-a-vacuo-de-bandeja-vgp-12-mini/
+https://orvedbrock.com.br/produtos/seladora-a-vacuo-de-bandeja-vgp-12-mini/
 
 (LINHA SOUS VIDE)
 
 https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/tc-50/
+https://orvedbrock.com.br/produtos/termocirculador-tc-50/
 https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/tc-100/
+https://orvedbrock.com.br/produtos/termocirculador-tc-100/
 
 (LINHA PARA DESFIAR CARNES)
 
 https://orvedbrock.com.br/linha-para-desfiar-carnes/desfiador-dfc-10/
+https://orvedbrock.com.br/produtos/desfiador-dfc-10/
 https://orvedbrock.com.br/supermercados/dfc-20/
+https://orvedbrock.com.br/produtos/desfiador-dfc-20/
 https://orvedbrock.com.br/supermercados/dfc-30/
+https://orvedbrock.com.br/produtos/desfiador-dfc-30/
+
 
 
 
