@@ -10,6 +10,9 @@ https://orvedbrock.com.br/aorvedebrock/tecnologia-italiana/
 https://orvedbrock.com.br/aorvedebrock/orved-no-mundo/
 
 
+(Clientes)
+https://orvedbrock.com.br/clientes/
+
 Produtos
 
 https://orvedbrock.com.br/produtos/
@@ -25,11 +28,76 @@ https://orvedbrock.com.br/categoria/linha-para-desfiar-carnes/
 https://orvedbrock.com.br/categoria/linha-para-desfiar-carnes/#
 
 
+--
+
+https://orvedbrock.com.br/assistencia-tecnica/
+
+(Categorias blog/novidades)
+
+https://orvedbrock.com.br/novidade/
+https://orvedbrock.com.br/categorias/maquinas-a-vacuo/
+https://orvedbrock.com.br/categorias/termocirculadores-profissionais/
+https://orvedbrock.com.br/categorias/desfiadores-frango-carnes/
+
+(Contato)
+https://orvedbrock.com.br/contatos/
+
+(All produtos)
+https://orvedbrock.com.br/produtos/
+
+(embalagens)
+https://orvedbrock.com.br/domesticos/embalagens-a-vacuo-linha-domestica/
+https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/embalagem-vacuo-sous-vide/
+
+(Linha domestica)
+https://orvedbrock.com.br/domesticos/eco-vacuum/
+https://orvedbrock.com.br/domesticos/conservando/
+
+(Linha câmara bancada)
+https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/mini-speciale/
+https://orvedbrock.com.br/supermercados/vm12/
+https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm12a/
+https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm16/
+https://orvedbrock.com.br/supermercados/vm17/
+https://orvedbrock.com.br/supermercados/vm18a/
+https://orvedbrock.com.br/supermercados/vm18/
+https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm53/
+https://orvedbrock.com.br/supermercados/vm60/
+https://orvedbrock.com.br/linha-camara-bancada/vm70/
+
+(Linha câmara Gabinete)
+https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm18h/
+https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm53h/
+https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm60h/
+https://orvedbrock.com.br/linha-camara-gabinete/vm70h/
+https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm20/
+https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm1800/
+https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/vm30/
+https://orvedbrock.com.br/laticinios-acougues-e-frigorificos/dupla-910/
+
+(LINHA CÂMARA VERTICAL)
 
 
+https://orvedbrock.com.br/linha-camara-vertical/vm12ls/
+https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/vm-16ls/
+https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/vm-19hls/
+https://orvedbrock.com.br/linha-camara-vertical/seladora-a-vacuo-vm-53hls/
 
+(LINHA CÂMARA BANDEJA)
 
+https://orvedbrock.com.br/linha-camara-bandeja/seladora-a-vacuo-de-bandeja-e-skin-vgp-combi-skin/
+https://orvedbrock.com.br/linha-camara-bandeja/seladora-a-vacuo-de-bandeja-vgp-12-mini/
 
+(LINHA SOUS VIDE)
+
+https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/tc-50/
+https://orvedbrock.com.br/restaurantes-hoteis-e-padarias/tc-100/
+
+(LINHA PARA DESFIAR CARNES)
+
+https://orvedbrock.com.br/linha-para-desfiar-carnes/desfiador-dfc-10/
+https://orvedbrock.com.br/supermercados/dfc-20/
+https://orvedbrock.com.br/supermercados/dfc-30/
 
 
 
