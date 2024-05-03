@@ -1,97 +1,257 @@
-<div style="font-weight:bold;color:#213D93 ;"> Veja mais detalhes nos itens abaixo:</div>
+<div class="row">
+
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">Nome*
+              [text* nome class:form-control placeholder "Digite seu nome"]
+          </label>
+      </div>
+  </div>
 
 
-<a style="color:#213D93 ;">• <u>Aviso de uso de cookies</u></a>
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">E-mail*
+              [email* email class:form-control placeholder "Digite seu e-mail"]
+          </label>
+      </div>
+  </div>
+
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">WhatsApp ou Telefone*
+              [text* tel class:form-control placeholder id:telefone "Digite seu telefone"]
+          </label>
+      </div>
+
+  </div>
 
 
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">Cargo*
+            [select* carg_form class:form-control include_blank "Sócio(a) / Proprietário(a)" "CEO/CFO" "Diretor(a)" "Gerente/Controller" "Coordenador(a)" "Analista" "Outros Cargos" "Estagiário/Estudante"]
+          </label>
+      </div>
+  </div>
 
 
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">Empresa*
+              [text* empresa class:form-control placeholder "Digite o nome da sua empresa"]
+          </label>
+
+      </div>
+  </div>
 
 
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+
+          <label style="width: 100%;">Área de atuação da empresa?
+
+              [select atuacao class:form-control "Academia" "Alimentício" "Consultorias e Treinamentos" "E-Commerce" "Educação" "Engenharia e Indústria Geral" "Eventos" "Financeiro e Jurídico" "Mídia e Comunicação" "ONG's" "Restaurante" "Hospital" "Varejo" "RH e Coaching" "Software e Cloud" "Supermercado e Atacadista" "Posto de Gasolina" "Farmácia" "Moda" "Terceirização de mão de obra" "Beleza" "Imóveis" "Distribuidora" "Telecomunicações" "Plano de Saúde" "Seguradora" "Cooperativa" "Transporte" "Subadquirente" "Marketplace" "Fundos de Investimentos em Direitos Creditórios (FDIC)" "Serviços" "Logística" "Escritório de Cobrança" "Administração de Condomínio" "Funerária" "Grupo de Lojistas" "Clínica de Saúde"]
+          </label>
+      </div>
+  </div>
 
 
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">Sua empresa tem quantas unidades (lojas ou filiais)?*
+[select* quantidade_cnpjs include_blank id:cnpjs class:form-control "1 a 2 lojas" "3 a 5 lojas" "6 a 10 lojas" "11 a 30 lojas" "31 a 50 lojas" "51 a 100 lojas" "Acima de 100 lojas"]
+          </label>
+      </div>
+  </div>
 
-<strong>Código: </strong>CodL8S97T/24<br>
-<strong>Nome: </strong>Meta Quest 2	<br>
-<strong>Marca:</strong>Meta<br>
-<strong>Modelo:</strong>Quest 2
+<div class="col-12 col-lg-6 d-flex align-items-end">
+    <div class="form-group" style="width: 100%; display:none;" id="faturamento">
+      <label style="width: 100%;">Qual o faturamento mensal da sua empresa?*
+        [select faturamento class:form-control placeholder "Qual o faturamento mensal da sua empresa?"  "0 a 300 mil/mês" "300 a 500 mil/mês" "500 mil a 1M/mês" "acima de 1M/mês"]
+      </label>
+  </div>
+</div>
+
+ 
+  <div class="col-12 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          [acceptance acceptance-806] Li e aceito os termos de
+          <a href="https://sitehomolog.boavistatecnologia.com.br/politica-de-privacidade/"
+              style="color: #0a0101;font-weight: 500" title="Política de privacidade" target="_blank">Política
+              de
+              Privacidade</a>
+          [/acceptance]
+      </div>
+  </div>
+<div class="col-12 d-flex">
+     [recaptcha]
+  </div>
+
+  <div class="col-12 d-flex">
+      [submit class:bt__padrao class:fr "Enviar"]
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+var empresas = document.querySelector('select[name="quantidade_cnpjs"]');
+      var faturamentos = document.getElementById('faturamento');
+
+      empresas.addEventListener('change', function() {
+          if (this.value === '1 a 2 lojas') {
+            faturamentos.style.display = 'block';
+          } else {
+            faturamentos.style.display = 'none';
+          }
+      });
+});
+</script>
 
 
-<strong>Código: </strong>CodL8S97T/24<br>
-<strong>Nome: </strong><br>
-<strong>Marca: </strong><br>
-<strong>Modelo: </strong>
-
-<strong>Código:</strong><br>
-<strong>Nome:</strong><br>
-<strong>Marca:</strong><br>
-<strong>Modelo:</strong>
-
-<strong>Código:</strong><br>
-<strong>Nome:</strong> <br>
-<strong>Marca:</strong><br>
-<strong>Modelo:</strong>
-
-
-
-
+---------------------------------------------------
 
 
 
 
 <div class="row">
-    <div class="col-12">
-      <h2 class="titulo__secao">Deixe a sua mensagem</h2>
-    </div>
-    <div class="col-12 col-lg-6">
-      <div class="form-group">
-        <label>Nome</label>[text* nome class:form-control placeholder "Digite seu nome"]
+
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">Nome*
+              [text* nome class:form-control placeholder "Digite seu nome"]
+          </label>
       </div>
-      <div class="form-group">
-        <label>Telefone</label>[text* telefone class:form-control id:telefone placeholder "Digite seu telefone"]
-      </div>
-    </div>
-    <div class="col-12 col-lg-6">
-      <div class="form-group">
-        <label>E-mail</label>[email* email class:form-control placeholder "Digite seu e-mail"]
-      </div>
-      <div class="form-group">
-        <label>Empresa</label>[text empresa class:form-control placeholder "Digite o nome da sua empresa"]
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="form-group">
-        <label>Mensagem</label>[textarea mensagem class:form-control mensagem placeholder "Digite sua mensagem aqui."]
-      </div>
-    </div>
-    <div class="col-12 final-line">
-        [acceptance acceptance-565] Li e aceito os termos de <a style="color:#ffffff"
-        href="https://grupoprotemaxi.com.br/politica-de-privacidade/">
-        <strong>Política de Privacidade.</strong>
-      [submit class:bt__padrao class:botao-enviar]Enviar Mensagem[/submit]
-    </div>
-  
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      var formulario = document.querySelector('.wpcf7-form');
-      var botaoEnviar = document.querySelector('.botao-enviar');
-      if (formulario && botaoEnviar) {
-          formulario.addEventListener('submit', function() {
-              // Desabilita o botão de envio
-              botaoEnviar.disabled = true;
-          });
-      }
-  });
-  </script>
-  
-  <style>
-  .wpcf7 form.sent .wpcf7-response-output {
-      border-color: #46b450;
-      color: #fff;
-      border: 0;
-  }
-  </style>
   </div>
+
+
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">E-mail*
+              [email* email class:form-control placeholder "Digite seu e-mail"]
+          </label>
+      </div>
+  </div>
+
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">WhatsApp ou Telefone*
+              [text* tel class:form-control placeholder id:telefone "Digite seu telefone"]
+          </label>
+      </div>
+
+  </div>
+
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+    <div class="form-group" style="width: 100%;">
+        <label style="width: 100%;">Possui CNPJ?*
+          [select* cnpj class:form-control include_blank "Sim" "Não"]
+        </label>
+    </div>
+</div>
+
+
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">Cargo*
+            [select* carg_form class:form-control include_blank "Sócio(a) / Proprietário(a)" "CEO/CFO" "Diretor(a)" "Gerente/Controller" "Coordenador(a)" "Analista" "Outros Cargos" "Estagiário/Estudante"]
+          </label>
+      </div>
+  </div>
+
+
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">Empresa*
+              [text* empresa class:form-control placeholder "Digite o nome da sua empresa"]
+          </label>
+
+      </div>
+  </div>
+
+
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+
+          <label style="width: 100%;">Área de atuação da empresa?
+
+              [select atuacao class:form-control "Academia" "Alimentício" "Consultorias e Treinamentos" "E-Commerce" "Educação" "Engenharia e Indústria Geral" "Eventos" "Financeiro e Jurídico" "Mídia e Comunicação" "ONG's" "Restaurante" "Hospital" "Varejo" "RH e Coaching" "Software e Cloud" "Supermercado e Atacadista" "Posto de Gasolina" "Farmácia" "Moda" "Terceirização de mão de obra" "Beleza" "Imóveis" "Distribuidora" "Telecomunicações" "Plano de Saúde" "Seguradora" "Cooperativa" "Transporte" "Subadquirente" "Marketplace" "Fundos de Investimentos em Direitos Creditórios (FDIC)" "Serviços" "Logística" "Escritório de Cobrança" "Administração de Condomínio" "Funerária" "Grupo de Lojistas" "Clínica de Saúde"]
+          </label>
+      </div>
+  </div>
+
+
+  <div class="col-12 col-lg-6 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          <label style="width: 100%;">Sua empresa tem quantas unidades (lojas ou filiais)?*
+[select* quantidade_cnpjs include_blank id:cnpjs class:form-control "1 a 2 lojas" "3 a 5 lojas" "6 a 10 lojas" "11 a 30 lojas" "31 a 50 lojas" "51 a 100 lojas" "Acima de 100 lojas"]
+          </label>
+      </div>
+  </div>
+
+<div class="col-12 col-lg-6 d-flex align-items-end">
+    <div class="form-group" style="width: 100%; display:none;" id="faturamento">
+      <label style="width: 100%;">Qual o faturamento mensal somando todas as lojas?*
+        [select faturamento class:form-control placeholder "Qual o faturamento mensal somando todas as lojas?"  "0 a 200 mil/mês" "201 a 300 mil/mês" "301 a 1M/mês" "Acima de 1M/mês"]
+      </label>
+  </div>
+</div>
+
+ 
+  <div class="col-12 d-flex align-items-end">
+      <div class="form-group" style="width: 100%;">
+          [acceptance acceptance-806] Li e aceito os termos de
+          <a href="https://sitehomolog.boavistatecnologia.com.br/politica-de-privacidade/"
+              style="color: #0a0101;font-weight: 500" title="Política de privacidade" target="_blank">Política
+              de
+              Privacidade</a>
+          [/acceptance]
+      </div>
+  </div>
+<div class="col-12 d-flex">
+     [recaptcha]
+  </div>
+
+  <div class="col-12 d-flex">
+      [submit class:bt__padrao class:fr "Enviar"]
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+var empresas = document.querySelector('select[name="quantidade_cnpjs"]');
+      var faturamentos = document.getElementById('faturamento');
+
+      empresas.addEventListener('change', function() {
+          if (this.value === '1 a 2 lojas') {
+            faturamentos.style.display = 'block';
+          } else {
+            faturamentos.style.display = 'none';
+          }
+      });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
