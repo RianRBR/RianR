@@ -328,7 +328,17 @@ https://clientes.atratis.com.br/dev/sangati/solucoes/co-tub-rosca-tubular/
 https://www.sangatiberga.com.br/produtos/fábrica-de-rações/vibroseparador
 https://clientes.atratis.com.br/dev/sangati/solucoes/vtv-vibroseparador/
 
+https://www.sangatiberga.com.br/produtos/milho/degerminadora
+https://clientes.atratis.com.br/dev/sangati/solucoes/md-37-degerminadora/
 
+https://www.sangatiberga.com.br/produtos/milho/degerminadora-horizontal
+https://clientes.atratis.com.br/dev/sangati/solucoes/mdh-degerminadora-horizontal/
+
+https://www.sangatiberga.com.br/produtos/milho/degerminadora-vertical
+https://clientes.atratis.com.br/dev/sangati/solucoes/sbm-dv-degerminadora-vertical/
+
+https://www.sangatiberga.com.br/produtos/milho/laminadorflocador
+https://clientes.atratis.com.br/dev/sangati/solucoes/pfs-laminador-flocador/
 
 
 
