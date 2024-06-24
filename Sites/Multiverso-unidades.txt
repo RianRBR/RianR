@@ -1,276 +1,1078 @@
+<script>
+          function customButtonWhatsAppValidation() {
+                const button = document.querySelector("#rd-button-l1uuit6i")
+                const select = document.querySelector("#rd-select_field-l6zbryfq")
+
+              if (!button || !select) return;
+
+              let isMessageShown = false;
+
+              select.addEventListener("change", (e) => {
+                  if (select.value == "1 a 2 lojas" && !isMessageShown) {
+                      isMessageShown = true;
+
+                      const textEl = createCustomMessage();
+
+                      select.parentElement.appendChild(textEl);
+
+                      button.setAttribute("disabled", "true");
+                      button.style.filter = "grayscale(100%)";
+                      button.style.cursor = "not-allowed";
+                  } else {
+                      isMessageShown = false;
+                      button.removeAttribute("disabled");
+                      button.style.filter = "unset";
+                      button.style.cursor = "pointer";
+
+                      const textValidation = document.querySelector(".custom-text-bw");
+                      if (textValidation) {
+                          textValidation.remove();
+                      }
+                  }
+              });
+
+              function createCustomMessage() {
+                  const p = document.createElement("p");
+                  p.innerHTML = `<p style="margin-top: 1rem; paddin-left: 0.5em; color: #DC3543; font: inherit; font-size: 12px;" class='custom-text-bw'>Ficamos felizes pelo seu interesse mas, no momento, só temos soluções para empresas com pelo menos 3 lojas. <a style="color: inherit; text-decoration: underline;" target="_blank" rel="nofollow" href="https://boavistatecnologia.com.br/blog/">Acesse nosso blog</a> e fique por dentro do universo de conciliação financeira.</p>`;
+
+                  return p;
+              }
+          }
+
+          const searchRdButton = setInterval(() => {
+              const buttonSelector =
+                  ".bricks--floating--button.rdstation-popup-js-floating-button";
+
+              const wppButton = document.querySelector(buttonSelector);
+
+              if (wppButton) {
+                  clearInterval(searchRdButton);
+                  customButtonWhatsAppValidation();
+              } else {
+                  console.log("WPP Button Not Found");
+              }
+          }, 500);
+
+          setTimeout(() => {
+              clearInterval(searchRdButton);
+          }, 60000);
+
+		</script>
+
+<style>
+	footer nav ul li a {
+		font-size: 15px !important;
+		color: #fff;
+	}
+
+
+	footer .logope {
+		margin: 0 auto 30px;
+	}
+
+	@media(max-width: 992px) {
+		footer {
+			padding: 40px;
+		}
+	}
+</style>
+<?php if(is_front_page()): ?>
+	<div class="fale_home contato-page" id="fale_conosco">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-5 mb-5 mb-md-0">
+					<h2><?php echo get_field('titulo_contato_rodape', 'option'); ?></h2>
+					<?php echo get_field('conteudo_contato_rodape', 'option'); ?>
+					
+					<a href="tel:<?php echo get_field('telefone_f', 'option'); ?>" target="_blank"><?php echo get_field('texto_telefone', 'option'); ?> <br>
+						<span><i class="fas fa-phone"></i> <?php echo get_field('telefone_f', 'option'); ?></span></a>
+				</div>
+				<div class="col-12 col-lg-7">
+					<?= do_shortcode(get_field('formulario_rodape', 'option'))?>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php endif; ?>
+
 <?php
-/**
- * Template Name: Unidade
-*/	
-get_header(); ?>
+// Condicional Página de Contato
+if (is_page_template('tmpl-contatos.php') || is_404()) :
+// Se for página de contato não mostra o formulário do rodapé
+else : ?>
 
-<main>
-  <!-- <section id="bannerin" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/banner-unidades.png);">
-            <h1><?php the_title(); ?></h1>
-        </section> -->
-  <section id="titulo" style="background-color:  #0142aa;">
-    <div class="wrapper">
-      <h1>Nossas Unidades</h1>
-    </div>
-  </section>
-  <section id="unidades">
-    <div class="wrapper">
-      <form action="POST">
-        <select name="bairros" id="bairros">
-          <option selected alt="todos">FILTRAR POR BAIRRO</option>
-          <option value="Todos" alt="todos">Todos</option>
-          <option value="Presidente Kennedy" alt="padre-andrade">Presidente Kennedy</option>
-          <option value="Messejana" alt="messejana">Messejana</option>
-		  <option value="Damas" alt="damas">Damas</option>
-          <option value="Panamericano" alt="panamericano">Panamericano</option>
-          <option value="Passaré" alt="passare">Passaré</option>
-        </select>
-      </form>
-      
-      <div class="units todos">
-        <div class="unit">
-          <div class="thumb" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/colegio.jpg);">
-          </div>
-          <div class="inf">
-            <h3>Colégio Universo</h3>
-            <small>Presidente Kennedy</small>
-          </div>
-          <div class="bx">
-            <ul>
-              <li><a href="https://goo.gl/maps/zkPDmZB5f8qvm8cQ7" target="_blank" style="color: #fff;"><i
-                    class="fa-solid fa-location-dot"></i> Rua Joaquim Albano, 100 - Presidente Kennedy, Fortaleza - CE,
-                  60356-342</a></li>
-              <li><a href="tel:558530256666" style="color: #fff;"><i class="fa-solid fa-phone"></i> (85) 3025-6666</a>
-              </li>
-              <li><a href="mailto:contato@colegiouniverso.com.br" style="color: #fff;"><i
-                    class="fa-solid fa-envelope"></i> contato@colegiouniverso.com.br</a></li>
-            </ul>
+	<?php // if(is_front_page()): 
+	?>
+	<!-- <section class="formulario" >
+			<span id="solicite" style="margin-top: 100px;display: block;width: 100%;height: 30px;position: absolute;top: -180px;"></span>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-4">
+						<h2></h2>
+						
+					</div>
+					<div class="col-12 col-lg-8">
+						<?php $rodape = get_field('formulario_rodape', option); ?>
+						<?php echo do_shortcode('' . $rodape . ''); ?>
+					</div>
+				</div>
+			</div>
+		</section> -->
+	<?php //else: 
+	?>
+	<?php $formPage = get_field('formulario_acf_page'); ?>
+	<?php // if($formPage): 
+	?>
+	<!-- <section class="formulario" >
+				<span id="solicite" style="margin-top: 100px;display: block;width: 100%;height: 30px;position: absolute;top: -180px;"></span>
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-4">
+							<h2><?php echo get_field('titulo_contato_rodape', option); ?></h2>
+							<?php echo get_field('conteudo_contato_rodape', option); ?>
+						</div>
+						<div class="col-12 col-lg-8">
+							<?php echo do_shortcode('' . $formPage . ''); ?>
+						</div>
+					</div>
+				</div>
+			</section> -->
+	<?php // endif;
+	?>
+	<?php // endif;
+	?>
 
-            <a href="https://universocolegio.com.br/" class="bt">Saiba mais</a>
-          </div>
-        </div>
 
-        <div class="unit">
-          <div class="thumb"
-            style="background-image: url(https://multiversoeducacao.com.br/wp-content/uploads/2022/11/multiverso-messejana.jpeg);">
-          </div>
-          <div class="inf">
-            <h3>Colégio Multiverso</h3>
-            <small>Messejana</small>
-          </div>
-          <div class="bx">
-            <ul>
-              <li><a href="https://goo.gl/maps/JCFZBJZaqoKLqg2Y7" target="_blank" style="color: #fff;"><i
-                    class="fa-solid fa-location-dot"></i> Rua Coronel Dionísio Alencar, 339 - Messejana, Fortaleza - CE,
-                  60840-450</a></li>
-              <li><a href="tel:558532747205" style="color: #fff;"><i class="fa-solid fa-phone"></i> (85) 3274-7205</a>
-              </li>
-              <li><a href="mailto:contato@multiversoeducacao.com.br" style="color: #fff;"><i
-                    class="fa-solid fa-envelope"></i> contato@multiversoeducacao.com.br</a></li>
-            </ul>
+<?php endif; ?>
 
-            <a href="https://multiversoeducacao.com.br/temp/colegio-multiverso-messejana/" class="bt">Saiba mais</a>
-          </div>
-        </div>
+<!-- <div id="menu_principal">
+	<button id="fechar_menu">
+		<i class="fa fa-times" aria-hidden="true"></i> FECHAR
+	</button>
+	<div id="titulo_formulario_popup">
+		<strong>Solicite um orçamento sem compromisso</strong>
+	</div>
+	<?php //if (is_front_page()) : ?>
+		<div id="formulario_popup">
+			<?php// $rodape = get_field('formulario_rodape', 'option'); ?>
+			<?php //echo do_shortcode('' . $rodape . ''); ?>			
+		</div>
+	<?php //else : ?>
+		<div id="formulario_popup">
+			<?php //$formPage = get_field('formulario_acf_page'); ?>
+			<?php //if ($formPage) : ?>
+				<?php //echo do_shortcode('' . $formPage . ''); ?>				
+			<?php //endif; ?>
+		</div>
+	<?php //endif; ?>
+</div> -->
 
-        <div class="unit">
-          <!-- <div class="thumb"
-            style="background-image: url(https://multiversoeducacao.com.br/wp-content/uploads/2022/11/multiverso-messejana.jpeg);">
-          </div> -->
-          <div class="inf">
-            <h3>Colégio Multiverso</h3>
-            <small>Damas</small>
-          </div>
-          <div class="bx">
-            <ul>
-              <li><a href="https://goo.gl/maps/RcqP6Cg4BT1REGr5A" target="_blank" style="color: #fff;"><i
-                    class="fa-solid fa-location-dot"></i> R. Ana Néri, 667 Fortaleza - CE,
-                  60130-490</a></li>
-              <li><a href="tel:558532747205" style="color: #fff;"><i class="fa-solid fa-phone"></i> (85) 98222-8777</a>
-              </li>
-              <li><a href="mailto:contato@multiversoeducacao.com.br" style="color: #fff;"><i
-                    class="fa-solid fa-envelope"></i> contato@multiversoeducacao.com.br</a></li>
-            </ul>
+<link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/build/css/ajustes-bowe.css?v=1.0">
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-12  col-lg-3">
+				<svg class="logo-footer" width="208" height="37" viewBox="0 0 208 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_7_170)">
+						<path
+							d="M35.7448 16.8262C29.8756 16.8227 23.0277 16.8227 18.2011 16.8262C16.9876 16.8244 15.9018 16.8262 14.9904 16.8262C13.4557 16.8262 12.4148 16.8297 12.1076 16.8297C11.7813 16.8332 11.4723 16.8543 11.1961 16.8983C9.39738 17.1747 8.50492 18.2853 8.31503 20.4044C8.15104 22.2208 6.89435 23.4704 5.12669 23.5144C3.69565 23.5531 2.26634 23.5021 0.838746 23.5355C0.238019 23.5443 0.0636699 23.3314 0.0498601 22.7277C-0.0157366 20.1527 -0.0312725 20.158 2.50455 20.1527C3.41255 20.1527 4.32572 20.1826 5.23372 20.1245C6.91506 20.0066 8.1286 18.7447 8.25807 17.0444C8.42551 14.8866 9.34732 13.7584 11.1961 13.5085C11.4464 13.4697 11.7192 13.4539 12.0109 13.4539H14.9904C15.9173 13.4521 17.0031 13.4521 18.2011 13.4521C22.5305 13.4521 28.3513 13.4539 33.6578 13.4539C33.8149 13.6158 33.965 13.7918 34.1083 13.9643C34.6832 14.6683 35.1648 15.4498 35.5307 16.2964C35.5963 16.4425 35.6602 16.5921 35.7154 16.7452C35.7258 16.7734 35.7361 16.7998 35.7448 16.8262Z"
+							fill="white" />
+						<path
+							d="M36.3679 20.3269C36.3679 20.5364 36.361 20.7476 36.3455 20.957C36.3006 21.7561 36.1573 22.534 35.9329 23.2697C35.9209 23.3173 35.9036 23.3648 35.8881 23.4088C35.8725 23.4475 35.8622 23.488 35.8501 23.525C30.699 23.5197 23.4143 23.5179 18.2011 23.5232C17.0049 23.5232 15.9173 23.5232 14.9903 23.525C13.2279 23.525 12.0437 23.5285 11.7934 23.5355C11.5862 23.5408 11.3825 23.5602 11.1961 23.5971C9.5372 23.8453 8.49974 25.0245 8.32366 26.8304C8.09753 29.1836 6.95131 30.2554 4.63644 30.2589C3.36939 30.266 2.10234 30.2325 0.831837 30.2677C0.238015 30.2889 0.0636659 30.0706 0.0498561 29.4704C-0.0122881 26.8708 -0.0312764 26.8744 2.4683 26.8708C3.37284 26.8638 4.28947 26.906 5.19401 26.8304C7.0031 26.6843 8.14241 25.4575 8.26842 23.6042C8.40134 21.6505 9.45089 20.4431 11.1961 20.2072C11.4067 20.172 11.6311 20.158 11.8607 20.158H36.3645C36.3679 20.2143 36.3679 20.2706 36.3679 20.3269Z"
+							fill="white" />
+						<path
+							d="M29.4547 3.36524C25.6346 3.36348 21.5089 3.35996 18.2015 3.36348C17.0069 3.36348 15.9177 3.36524 14.9907 3.36876C13.2386 3.36876 12.0509 3.37228 11.7937 3.37932C11.5866 3.38284 11.3829 3.39868 11.1964 3.43212C9.53753 3.68909 8.50007 4.86481 8.324 6.67239C8.09786 9.02911 6.95165 10.0904 4.63678 10.101C3.36973 10.101 2.10268 10.0781 0.832173 10.1116C0.238351 10.1239 0.0640016 9.91266 0.0501918 9.3072C-0.0119524 6.71463 -0.0309408 6.71815 2.46864 6.71463C3.37318 6.70759 4.2898 6.74807 5.19435 6.67239C7.00343 6.52631 8.14274 5.29954 8.26876 3.4462C8.40168 1.49253 9.45122 0.28513 11.1964 0.0492817C11.407 0.0158405 11.6314 0 11.861 0H22.9848C23.1212 0 23.2593 0.00352012 23.3922 0.0105604C24.5523 0.0668823 25.6415 0.376653 26.6168 0.890591C27.3453 1.27076 28.0099 1.76006 28.5882 2.34088C28.9023 2.65417 29.1889 2.99562 29.4513 3.3582C29.4513 3.36172 29.4547 3.36172 29.4547 3.36524Z"
+							fill="white" />
+						<path
+							d="M30.9805 8.15272C30.9805 8.55225 30.9546 8.93946 30.8976 9.32316C30.8597 9.58013 30.8148 9.83534 30.7526 10.0853C30.7526 10.0976 30.7475 10.1117 30.744 10.124C26.3076 10.124 21.7486 10.124 18.2012 10.1257C16.9998 10.1257 15.914 10.1257 14.9905 10.1275C13.8356 10.1275 12.9259 10.131 12.358 10.131C11.9264 10.131 11.5432 10.1574 11.1962 10.2032C9.31117 10.4795 8.54128 11.5144 8.29442 13.8289C8.10972 15.5186 6.84785 16.7665 5.18376 16.8105C3.72165 16.8474 2.25953 16.8034 0.795693 16.8298C0.248479 16.8369 0.0758567 16.6362 0.0499633 16.0818C-0.0691464 13.454 -0.0864087 13.4611 2.44942 13.4505C3.40057 13.4505 4.34136 13.4734 5.27698 13.3995C6.94797 13.2657 8.13216 11.9984 8.25817 10.2894C8.41871 8.1756 9.36469 7.0386 11.1962 6.80451C11.4362 6.77283 11.6899 6.75171 11.9592 6.75171H30.8631C30.8769 6.84147 30.8925 6.933 30.9045 7.021C30.9546 7.39413 30.9805 7.76726 30.9805 8.15272Z"
+							fill="white" />
+						<path
+							d="M33.9566 26.8708C33.6321 27.2527 33.2748 27.6083 32.895 27.9304C31.6193 29.0304 30.0588 29.8013 28.3447 30.1076C27.92 30.1903 27.4885 30.2396 27.0483 30.2554C27.0275 30.2589 27.0086 30.2589 26.9878 30.2589C26.8653 30.266 26.741 30.2712 26.6167 30.2712C26.6115 30.2712 26.6081 30.266 26.6046 30.266H14.9906V30.2624C13.2005 30.2624 12.0335 30.266 11.8074 30.2677C11.5968 30.2748 11.3862 30.2888 11.1963 30.3223C9.52878 30.5669 8.49995 31.7215 8.32388 33.5379C8.10637 35.863 6.91527 36.9876 4.64701 36.9912C3.34544 37 2.04559 36.9771 0.745737 37C0.248584 37.014 0.0828661 36.8539 0.0500678 36.3329C-0.0932091 33.6171 -0.108745 33.6277 2.54619 33.6171C3.49044 33.6136 4.44159 33.6488 5.36685 33.5291C7.11034 33.3073 8.13227 32.1211 8.26173 30.3328C8.40156 28.3739 9.4511 27.1683 11.1963 26.9254C11.4069 26.8902 11.6313 26.8708 11.8609 26.8708C12.0301 26.8673 13.2074 26.8673 14.9906 26.8708C15.9158 26.8708 17.0051 26.869 18.2013 26.8708C22.9657 26.8673 29.4201 26.8673 33.9566 26.8708Z"
+							fill="white" />
+						<path
+							d="M74.5126 24.8241C74.5126 28.4832 71.8369 30.6534 67.1848 30.6534H56.6064V10.1909H67.1537C71.5625 10.1909 73.8739 11.8348 73.8739 14.841C73.8739 17.3825 72.1408 18.7783 68.7953 18.9965C72.3842 19.2764 74.5126 21.4148 74.5126 24.8258V24.8241ZM61.3225 13.3837V18.9648H65.9591C68.1532 18.9648 69.1682 18.0654 69.1682 16.1751C69.1682 14.2848 68.1532 13.3854 65.9591 13.3854H61.3225V13.3837ZM66.4805 27.4606C68.5916 27.4606 69.7171 26.438 69.7171 24.546C69.7171 22.6539 68.621 21.6313 66.4805 21.6313H61.3225V27.4606H66.4805Z"
+							fill="white" />
+						<path
+							d="M76.5375 20.6684C76.5375 14.2301 80.4146 10.1538 86.4909 10.1538C92.5672 10.1538 96.4443 14.2283 96.4443 20.6684C96.4443 27.1085 92.5672 31.1425 86.4909 31.1425C80.4146 31.1425 76.5375 27.068 76.5375 20.6684ZM91.6057 20.6684C91.6057 16.7153 89.4876 13.9432 86.4892 13.9432C83.4907 13.9432 81.3329 16.7153 81.3329 20.6684C81.3329 24.6215 83.451 27.3514 86.4892 27.3514C89.5273 27.3514 91.6057 24.5793 91.6057 20.6684Z"
+							fill="white" />
+						<path
+							d="M117.827 18.4683V30.6532H113.111V26.8638C112.352 29.5532 109.954 31.1425 106.475 31.1425C102.477 31.1425 99.921 28.8193 99.921 25.315C99.921 21.5256 102.919 18.9981 107.356 18.9981C110.394 18.9981 112.393 20.3023 113.111 22.7066V18.632C113.111 15.7385 111.592 13.945 109.073 13.945C106.715 13.945 105.157 15.5748 105.157 18.1832L100.161 16.4302C101 12.5176 104.318 10.1538 109.075 10.1538C114.59 10.1538 117.829 13.211 117.829 18.4683H117.827ZM113.111 24.7852C113.111 23.0727 111.513 22.0131 108.915 22.0131C106.317 22.0131 104.718 23.1131 104.718 24.7852C104.718 26.4573 106.356 27.5978 108.915 27.5978C111.473 27.5978 113.111 26.4977 113.111 24.7852Z"
+							fill="white" />
+						<path
+							d="M135.535 10.6431H140.491L133.655 30.6532H127.499L120.624 10.6431H125.619L130.575 25.8042L135.531 10.6431H135.535Z"
+							fill="white" />
+						<path d="M149.205 2.65601V7.42401H144.009V2.65601H149.205ZM148.965 10.6432V30.6533H144.249V10.6432H148.965Z"
+							fill="white" />
+						<path
+							d="M157.358 23.3983C157.318 26.2108 158.797 27.6365 161.715 27.6365C164.152 27.6365 165.512 26.8216 165.512 25.4364C165.512 24.1727 164.394 23.4387 160.396 22.2577C155.319 20.7494 153.481 18.9981 153.481 15.6558C153.481 12.3134 156.638 10.1538 161.475 10.1538C166.032 10.1538 169.229 12.3539 169.869 15.8194L165.352 17.4088C165.352 15.045 164.033 13.6599 161.475 13.6599C159.396 13.6599 158.117 14.4343 158.117 15.6575C158.117 16.8808 159.236 17.6552 163.154 18.7957C168.311 20.3446 170.189 22.0976 170.189 25.4382C170.189 28.7788 166.911 31.1443 161.715 31.1443C156.519 31.1443 153.481 28.9847 152.8 25.0316L157.358 23.4018V23.3983Z"
+							fill="white" />
+						<path
+							d="M187.375 30.1236C186.017 30.817 184.337 31.1426 182.578 31.1426C178.3 31.1426 176.182 28.983 176.182 24.7043V13.9046H171.865V10.645H172.825C175.903 10.645 177.021 9.50444 177.021 6.57042V4.57275H181.338V6.57042C181.338 9.34252 180.26 10.4426 177.061 10.645H186.614V13.9046H180.898V23.7662C180.898 26.0895 181.697 27.1895 183.457 27.1895C184.656 27.1895 185.695 26.6598 186.574 25.5597L187.373 30.1236H187.375Z"
+							fill="white" />
+						<path
+							d="M208 18.4683V30.6532H203.284V26.8638C202.524 29.5532 200.127 31.1425 196.648 31.1425C192.652 31.1425 190.094 28.8193 190.094 25.315C190.094 21.5256 193.092 18.9981 197.529 18.9981C200.567 18.9981 202.564 20.3023 203.284 22.7066V18.632C203.284 15.7385 201.765 13.945 199.246 13.945C196.888 13.945 195.33 15.5748 195.33 18.1832L190.334 16.4302C191.173 12.5176 194.491 10.1538 199.248 10.1538C204.763 10.1538 208.002 13.211 208.002 18.4683H208ZM203.284 24.7852C203.284 23.0727 201.685 22.0131 199.088 22.0131C196.49 22.0131 194.891 23.1131 194.891 24.7852C194.891 26.4573 196.529 27.5978 199.088 27.5978C201.646 27.5978 203.284 26.4977 203.284 24.7852Z"
+							fill="white" />
+					</g>
+					<defs>
+						<clipPath id="clip0_7_170">
+							<rect width="208" height="37" fill="white" />
+						</clipPath>
+					</defs>
+				</svg>
+				<p>
+					Quer conhecer como podemos revolucionar a conciliação financeira na sua empresa?
+				</p>
+				<a href="https://boavistatecnologia.com.br/contatos/" class="bt__padrao">Entre em contato conosco</a>
+				<div class="selos">
+					<img src="<?php bloginfo("template_url"); ?>/build/images/gptw1.png" alt="<?php wp_title(); ?>" title="<?php wp_title(); ?>">
+					<img src="<?php bloginfo("template_url"); ?>/build/images/gptw2.png" alt="<?php wp_title(); ?>" title="<?php wp_title(); ?>">
+					<img src="<?php bloginfo("template_url"); ?>/build/images/gptw3.png" alt="<?php wp_title(); ?>" title="<?php wp_title(); ?>">
+				</div>
+			</div><!--col-->
+			<div class="col-12  col-lg-3">
+				<h5>Navegação</h5>
+				<nav style="margin-bottom: 40px;">
+					<?php
+					wp_nav_menu(array(
+						'menu' => 'Navegação',
+						'container' => false,
+						'container_class' => '',
+						'container_id' => '',
+						'menu_class' => '',
+						'menu_id' => '',
+						'echo' => true,
+						'fallback_cb' => 'wp_page_menu',
+						'before' => '',
+						'after' => '',
+						'link_before' => '',
+						'link_after' => '',
+						'depth' => 0,
+						'walker' => new Description_Walker,
+						'theme_location' => ''
+					));
+					?>
+				</nav>
+			</div><!--col-->
+			<div class="col-12  col-lg-3">
+				<h5>Soluções</h5>
+				<nav style="margin-bottom: 40px;">
+					<?php
+					wp_nav_menu(array(
+						'menu' => 'Soluções',
+						'container' => false,
+						'container_class' => '',
+						'container_id' => '',
+						'menu_class' => '',
+						'menu_id' => '',
+						'echo' => true,
+						'fallback_cb' => 'wp_page_menu',
+						'before' => '',
+						'after' => '',
+						'link_before' => '',
+						'link_after' => '',
+						'depth' => 0,
+						'walker' => new Description_Walker,
+						'theme_location' => ''
+					));
+					?>
+				</nav>
+			</div><!--col-->
+			<div class="col-12  col-lg-3">
+				<h5>Contatos</h5>
+				<a href="/contatos"><b>Solicite uma demonstração</b></a>
+				<?php $titulo_contato_rodape_redes = get_field('titulo_contato_rodape_redes', 'option'); ?>
+				<?php $link_botao = get_field('link_botao', 'option'); ?>	
+				<?php $texto_botao = get_field('texto_botao', 'option'); ?>	
+				<?php if (have_rows('redes_sociais', 'option')) : ?>
+					<div class="social">
+						<h4><?php echo $titulo_contato_rodape_redes; ?></h4>
+						<?php while (have_rows('redes_sociais', 'option')) : the_row();
+							$icone = get_sub_field('icone_rede_social');
+							$link_rede = get_sub_field('link_rede_social'); ?>
 
-            <a href="https://multiversoeducacao.com.br/damas/" class="bt">Saiba mais</a>
-          </div>
-        </div>
+							<a href="<?php echo $link_rede; ?>" target="_blank">
+								<?php echo $icone; ?>
+							</a>
+						<?php endwhile; ?>
+					</div>
+				<?php endif; ?>
 
-        <div class="unit">
-          <!-- <div class="thumb"
-            style="background-image: url(https://multiversoeducacao.com.br/wp-content/uploads/2022/11/multiverso-messejana.jpeg);">
-          </div> -->
-          <div class="inf">
-            <h3>Colégio Multiverso</h3>
-            <small>Panamericano</small>
-          </div>
-          <div class="bx">
-            <ul>
-              <li><a href="https://maps.app.goo.gl/GJwLsoagW3kh2PpV8" target="_blank" style="color: #fff;"><i
-                    class="fa-solid fa-location-dot"></i>R. Amazonas, 490 - Panamericano, Fortaleza - CE, 60441-685</a>
-              </li>
-              <li><a href="tel:8540426535" style="color: #fff;"><i class="fa-solid fa-phone"></i> (85) 4042-6535</a>
-              </li>
-              <li><a href="mailto:contato@multiversoeducacao.com.br" style="color: #fff;"><i
-                    class="fa-solid fa-envelope"></i> contato@multiversoeducacao.com.br</a></li>
-            </ul>
+				<h4>Quer uma proposta<br>
+				e prefere ligar?</h4>
+				<?php
+				// Telefones
+				$centralVendas = get_field('central_vendas', option);
+				// Caracteres
+				$chars = array('(', ')', ' ', '.', '-');
+				// Telefones tratados
+				$centralVendasT = str_replace($chars, "", $centralVendas);
+				?>
 
-            <a href="https://multiversoeducacao.com.br/panamericano/" class="bt">Saiba mais</a>
-          </div>
-        </div>
+				<?php if ($centralVendas) : ?>
+					<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M14.225 18.2501C10.6526 18.2455 7.2279 16.8243 4.70185 14.2982C2.1758 11.7722 0.75463 8.34747 0.75 4.7751C0.75 3.7076 1.17406 2.68383 1.9289 1.929C2.68373 1.17416 3.7075 0.7501 4.775 0.7501C5.00105 0.748378 5.22672 0.768894 5.44875 0.81135C5.6634 0.843113 5.87441 0.895866 6.07875 0.96885C6.22247 1.01928 6.35053 1.10634 6.45028 1.22144C6.55003 1.33653 6.61801 1.47567 6.6475 1.6251L7.84625 6.8751C7.87856 7.01761 7.87467 7.16593 7.83493 7.30655C7.79519 7.44716 7.72087 7.57559 7.61875 7.6801C7.505 7.8026 7.49625 7.81135 6.42 8.37135C7.28187 10.2621 8.79405 11.7805 10.6813 12.6501C11.25 11.5651 11.2587 11.5564 11.3813 11.4426C11.4858 11.3405 11.6142 11.2662 11.7548 11.2264C11.8954 11.1867 12.0437 11.1828 12.1863 11.2151L17.4363 12.4138C17.5809 12.4474 17.7146 12.5172 17.8248 12.6167C17.935 12.7162 18.0181 12.8421 18.0663 12.9826C18.1401 13.1903 18.1957 13.404 18.2325 13.6213C18.2677 13.8413 18.2853 14.0636 18.285 14.2863C18.2689 15.3493 17.8329 16.3627 17.0722 17.1053C16.3116 17.8479 15.288 18.2595 14.225 18.2501Z" fill="#90E0EF"/>
+					</svg>
+					<a class="central" href="tel:<?php echo $centralVendasT; ?>"><?php echo $centralVendas; ?></a>
+				<?php endif; ?>
 
-        <div class="unit">
-          <!-- <div class="thumb"
-            style="background-image: url(https://multiversoeducacao.com.br/wp-content/uploads/2022/11/multiverso-messejana.jpeg);">
-          </div> -->
-          <div class="inf">
-            <h3>Colégio Multiverso</h3>
-            <small>Passaré</small>
-          </div>
-          <div class="bx">
-            <ul>
-              <li><a href="https://maps.app.goo.gl/dXnPjAxqryewZVH99" target="_blank" style="color: #fff;"><i
-                    class="fa-solid fa-location-dot"></i>Av. Pres. Juscelino Kubitschek, 3653 - CJ - Barroso, Fortaleza
-                  - CE, 60861-000</a>
-              </li>
-              <li><a href="tel:8540426535" style="color: #fff;"><i class="fa-solid fa-phone"></i> (85) 4042-6535</a>
-              </li>
-              <li><a href="mailto:contato@multiversoeducacao.com.br" style="color: #fff;"><i
-                    class="fa-solid fa-envelope"></i> contato@multiversoeducacao.com.br</a></li>
-            </ul>
+				<a href="<?php echo $link_botao; ?>" target="_blank" class="bt__padrao"><?php echo $texto_botao; ?></a>
 
-            <a href="https://multiversoeducacao.com.br/passare/" class="bt">Saiba mais</a>
-          </div>
-        </div>
+			</div><!--col-->
+		</div><!--row-->
+		<div class="divisor">
+			<p class="center">
+			© Todos os direitos reservados | <a href="https://boavistatecnologia.com.br/politica-de-privacidade/">Política de privacidade</a>
+			</p>
+		</div>
+	</div><!--container-->
+</footer>
 
-      </div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://unpkg.com/sweetalert2@8.0.1/dist/sweetalert2.all.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-      <div class="units padre-andrade" style="display:none;">
-        <div class="unit">
-          <div class="thumb" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/colegio.jpg);">
-          </div>
-          <div class="inf">
-            <h3>Colégio Universo</h3>
-            <small>Presidente Kennedy</small>
-          </div>
-          <div class="bx">
-            <ul>
-              <li><a href="https://goo.gl/maps/zkPDmZB5f8qvm8cQ7" target="_blank" style="color: #fff;"><i
-                    class="fa-solid fa-location-dot"></i> Rua Joaquim Albano, 100 - Presidente Kennedy, Fortaleza - CE,
-                  60356-342</a></li>
-              <li><a href="tel:558530256666" style="color: #fff;"><i class="fa-solid fa-phone"></i> (85) 3025-6666</a>
-              </li>
-              <li><a href="mailto:contato@colegiouniverso.com.br" style="color: #fff;"><i
-                    class="fa-solid fa-envelope"></i> contato@colegiouniverso.com.br</a></li>
-            </ul>
+<script src='<?php bloginfo('template_url'); ?>/build/js/scripts.min.js?v=2.1'></script>
 
-            <a href="https://universocolegio.com.br/" class="bt">Saiba mais</a>
-          </div>
-        </div>
-      </div>
+<?php wp_footer(); ?>
+<script>
+	jQuery(document).ready(function() {
+		jQuery('[data-toggle="tooltip"]').tooltip();
+	});
+</script>
 
-      <div class="units messejana" style="display:none;">
-        <div class="unit">
-          <div class="thumb" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/sousa.jpeg);">
-          </div>
-          <div class="inf">
-            <h3>Colégio Multiverso</h3>
-            <small>Messejana</small>
-          </div>
-          <div class="bx">
-            <ul>
-              <li><a href="https://goo.gl/maps/JCFZBJZaqoKLqg2Y7" target="_blank" style="color: #fff;"><i
-                    class="fa-solid fa-location-dot"></i> Rua Coronel Dionísio Alencar, 339 - Messejana, Fortaleza - CE,
-                  60840-450</a></li>
-              <li><a href="tel:558532747205" style="color: #fff;"><i class="fa-solid fa-phone"></i> (85) 3274-7205</a>
-              </li>
-              <li><a href="mailto:contato@multiversoeducacao.com.br" style="color: #fff;"><i
-                    class="fa-solid fa-envelope"></i> contato@multiversoeducacao.com.br</a></li>
-            </ul>
+<style>
+	.swal2-popup {
+		font-size: 1em !important;
+	}
 
-            <a href="https://multiversoeducacao.com.br/temp/colegio-multiverso-messejana/" class="bt">Saiba mais</a>
-          </div>
-        </div>
-      </div>
+	.swal2-container {
+		z-index: 9999 !important;
+	}
+</style>
 
-    <div class="units damas" style="display:none;">
-        <div class="unit">
-            <!-- <div class="thumb"
-            style="background-image: url(https://multiversoeducacao.com.br/wp-content/uploads/2022/11/multiverso-messejana.jpeg);">
-            </div> -->
-            <div class="inf">
-            <h3>Colégio Multiverso</h3>
-            <small>Damas</small>
-            </div>
-            <div class="bx">
-            <ul>
-                <li><a href="https://goo.gl/maps/RcqP6Cg4BT1REGr5A" target="_blank" style="color: #fff;"><i
-                    class="fa-solid fa-location-dot"></i> R. Ana Néri, 667 Fortaleza - CE,
-                    60130-490</a></li>
-                <li><a href="tel:558532747205" style="color: #fff;"><i class="fa-solid fa-phone"></i> (85) 98222-8777</a>
-                </li>
-                <li><a href="mailto:contato@multiversoeducacao.com.br" style="color: #fff;"><i
-                    class="fa-solid fa-envelope"></i> contato@multiversoeducacao.com.br</a></li>
-            </ul>
+<script>
+	var zn_hash_url = document.location.toString();
+	if (zn_hash_url.match('#')) {
+		jQuery('.nav-pills a[data-toggle="pill"][href="#' + zn_hash_url.split('#')[1] + '"]').tab('show');
+	}
 
-            <a href="https://multiversoeducacao.com.br/damas/" class="bt">Saiba mais</a>
-            </div>
-        </div>
-    </div>
+	jQuery(".owl-depoimentos2").owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: false,
+		dots: true,
+		autoHeight: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 1,
+			},
+			1000: {
+				items: 1,
+			},
+		},
+	});
+	jQuery(".owl-destacase").owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: false,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			600: {
+				items: 1,
+			},
+			1000: {
+				items: 1,
+			},
+		},
+	});
 
-    <div class="units panamericano" style="display:none;">
-        <div class="unit">
-        <!-- <div class="thumb"
-          style="background-image: url(https://multiversoeducacao.com.br/wp-content/uploads/2022/11/multiverso-messejana.jpeg);">
-        </div> -->
-        <div class="inf">
-          <h3>Colégio Multiverso</h3>
-          <small>Panamericano</small>
-        </div>
-        <div class="bx">
-          <ul>
-            <li><a href="https://maps.app.goo.gl/GJwLsoagW3kh2PpV8" target="_blank" style="color: #fff;"><i
-                  class="fa-solid fa-location-dot"></i>R. Amazonas, 490 - Panamericano, Fortaleza - CE, 60441-685</a>
-            </li>
-            <li><a href="tel:8540426535" style="color: #fff;"><i class="fa-solid fa-phone"></i> (85) 4042-6535</a>
-            </li>
-            <li><a href="mailto:contato@multiversoeducacao.com.br" style="color: #fff;"><i
-                  class="fa-solid fa-envelope"></i> contato@multiversoeducacao.com.br</a></li>
-          </ul>
+	$('.owl-empresas').owlCarousel({
+		autoplay: true,
+		loop: true,
+		margin: 20,
+		dots: false,
+		nav: true,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+		smartSpeed: 700,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			1201: {
+				items: 4
+			}
+		}
+	});
+	$('.owl-cases').owlCarousel({
+		autoplay: true,
+		loop: true,
+		margin: 20,
+		dots: true,
+		nav: false,
+		smartSpeed: 700,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			1201: {
+				items: 4
+			}
+		}
+	});
 
-          <a href="https://multiversoeducacao.com.br/panamericano/" class="bt">Saiba mais</a>
-        </div>
-        </div>
-    </div>
+	// document.addEventListener('wpcf7mailsent', function(event) {
 
-    <div class="units passare" style="display:none;">
-        <div class="unit">
-            <!-- <div class="thumb"
-            style="background-image: url(https://multiversoeducacao.com.br/wp-content/uploads/2022/11/multiverso-messejana.jpeg);">
-            </div> -->
-            <div class="inf">
-            <h3>Colégio Multiverso</h3>
-            <small>Passaré</small>
-            </div>
-            <div class="bx">
-            <ul>
-                <li><a href="https://maps.app.goo.gl/dXnPjAxqryewZVH99" target="_blank" style="color: #fff;"><i
-                    class="fa-solid fa-location-dot"></i>Av. Pres. Juscelino Kubitschek, 3653 - CJ - Barroso, Fortaleza
-                    - CE, 60861-000</a>
-                </li>
-                <li><a href="tel:8540426535" style="color: #fff;"><i class="fa-solid fa-phone"></i> (85) 4042-6535</a>
-                </li>
-                <li><a href="mailto:contato@multiversoeducacao.com.br" style="color: #fff;"><i
-                    class="fa-solid fa-envelope"></i> contato@multiversoeducacao.com.br</a></li>
-            </ul>
+	// 	// Código RD
+	// 	var token = "05955bb174d57fd405b38cf06a246416";
 
-            <a href="https://multiversoeducacao.com.br/passare/" class="bt">Saiba mais</a>
-            </div>
-        </div>
-    </div>
 
-    </div>
-  </section>
-</main>
+	// 	//Solicite Orçamento - Página Inicial
+	// 	if ('5' == event.detail.contactFormId) {
 
-<?php get_footer(); ?>
+	// 		var nome = event.detail.inputs[0].value;
+	// 		var empresa = event.detail.inputs[1].value;
+	// 		var cnpjs = event.detail.inputs[2].value;
+	// 		var email = event.detail.inputs[3].value;
+	// 		var cargo = event.detail.inputs[4].value;
+	// 		var tel = event.detail.inputs[5].value;
+
+	// 		var data_array = [{
+	// 				name: 'nome',
+	// 				value: nome
+	// 			},
+	// 			{
+	// 				name: 'email',
+	// 				value: email
+	// 			},
+	// 			{
+	// 				name: 'empresa',
+	// 				value: empresa
+	// 			},
+	// 			{
+	// 				name: 'Cargo 2',
+	// 				value: cargo
+	// 			},
+	// 			{
+	// 				name: 'quantidade_de_pontos_de_vendas',
+	// 				value: cnpjs
+	// 			},
+	// 			{
+	// 				name: 'telefone',
+	// 				value: tel
+	// 			},
+	// 			{
+	// 				name: 'identificador',
+	// 				value: 'Formulário de Proposta da Página Inicial'
+	// 			},
+	// 			{
+	// 				name: 'token_rdstation',
+	// 				value: token
+	// 			}
+	// 		];
+
+	// 		RdIntegration.post(data_array, function() {
+	// 			console.log('RD: Lead enviado!');
+	// 			location = '/agradecimento-home';
+	// 			// Swal.fire(
+	// 			// 	'Enviado com sucesso!',
+	// 			// 	'Em breve entraremos em contato com você.',
+	// 			// 	'success'
+	// 			// );
+	// 		});
+
+	// 	}
+
+	// 	//Solicite Orçamento - Página Extrato
+	// 	if ('932' == event.detail.contactFormId) {
+
+	// 		var nome = event.detail.inputs[0].value;
+	// 		var empresa = event.detail.inputs[1].value;
+	// 		var cnpjs = event.detail.inputs[2].value;
+	// 		var email = event.detail.inputs[3].value;
+	// 		var cargo = event.detail.inputs[4].value;
+	// 		var tel = event.detail.inputs[5].value;
+
+	// 		var data_array = [{
+	// 				name: 'nome',
+	// 				value: nome
+	// 			},
+	// 			{
+	// 				name: 'email',
+	// 				value: email
+	// 			},
+	// 			{
+	// 				name: 'empresa',
+	// 				value: empresa
+	// 			},
+	// 			{
+	// 				name: 'Cargo 2',
+	// 				value: cargo
+	// 			},
+	// 			{
+	// 				name: 'quantidade_de_pontos_de_vendas',
+	// 				value: cnpjs
+	// 			},
+	// 			{
+	// 				name: 'telefone',
+	// 				value: tel
+	// 			},
+	// 			{
+	// 				name: 'identificador',
+	// 				value: 'Formulário de Proposta do Extrato'
+	// 			},
+	// 			{
+	// 				name: 'token_rdstation',
+	// 				value: token
+	// 			}
+	// 		];
+
+	// 		RdIntegration.post(data_array, function() {
+	// 			console.log('RD: Lead enviado!');
+	// 			location = '/agradecimento-eextrato';
+	// 			// Swal.fire(
+	// 			// 	'Enviado com sucesso!',
+	// 			// 	'Em breve entraremos em contato com você.',
+	// 			// 	'success'
+	// 			// );
+	// 		});
+
+	// 	}
+
+	// 	//Solicite Orçamento - Conciliação de Cartões
+	// 	if ('935' == event.detail.contactFormId) {
+
+	// 		var nome = event.detail.inputs[0].value;
+	// 		var empresa = event.detail.inputs[1].value;
+	// 		var cnpjs = event.detail.inputs[2].value;
+	// 		var email = event.detail.inputs[3].value;
+	// 		var cargo = event.detail.inputs[4].value;
+	// 		var tel = event.detail.inputs[5].value;
+
+	// 		var data_array = [{
+	// 				name: 'nome',
+	// 				value: nome
+	// 			},
+	// 			{
+	// 				name: 'email',
+	// 				value: email
+	// 			},
+	// 			{
+	// 				name: 'empresa',
+	// 				value: empresa
+	// 			},
+	// 			{
+	// 				name: 'Cargo 2',
+	// 				value: cargo
+	// 			},
+	// 			{
+	// 				name: 'quantidade_de_pontos_de_vendas',
+	// 				value: cnpjs
+	// 			},
+	// 			{
+	// 				name: 'telefone',
+	// 				value: tel
+	// 			},
+	// 			{
+	// 				name: 'identificador',
+	// 				value: 'Formulário de Proposta Concilição de Cartões'
+	// 			},
+	// 			{
+	// 				name: 'token_rdstation',
+	// 				value: token
+	// 			}
+	// 		];
+
+	// 		RdIntegration.post(data_array, function() {
+	// 			console.log('RD: Lead enviado!');
+	// 			location = '/agradecimento-conciliacao-de-cartoes';
+	// 			// Swal.fire(
+	// 			// 	'Enviado com sucesso!',
+	// 			// 	'Em breve entraremos em contato com você.',
+	// 			// 	'success'
+	// 			// );
+	// 		});
+
+	// 	}
+
+	// 	//Solicite Orçamento - Página de Contato
+	// 	if ('938' == event.detail.contactFormId) {
+
+	// 		var nome = event.detail.inputs[0].value;
+	// 		var empresa = event.detail.inputs[1].value;
+	// 		var cnpjs = event.detail.inputs[2].value;
+	// 		var email = event.detail.inputs[3].value;
+	// 		var cargo = event.detail.inputs[4].value;
+	// 		var tel = event.detail.inputs[5].value;
+
+	// 		var data_array = [{
+	// 				name: 'nome',
+	// 				value: nome
+	// 			},
+	// 			{
+	// 				name: 'email',
+	// 				value: email
+	// 			},
+	// 			{
+	// 				name: 'empresa',
+	// 				value: empresa
+	// 			},
+	// 			{
+	// 				name: 'Cargo 2',
+	// 				value: cargo
+	// 			},
+	// 			{
+	// 				name: 'quantidade_de_pontos_de_vendas',
+	// 				value: cnpjs
+	// 			},
+	// 			{
+	// 				name: 'telefone',
+	// 				value: tel
+	// 			},
+	// 			{
+	// 				name: 'identificador',
+	// 				value: 'Formulário Solicite Proposta'
+	// 			},
+	// 			{
+	// 				name: 'token_rdstation',
+	// 				value: token
+	// 			}
+	// 		];
+
+	// 		RdIntegration.post(data_array, function() {
+	// 			console.log('RD: Lead enviado!');
+	// 			location = '/agradecimento-contato';
+	// 			// Swal.fire(
+	// 			// 	'Enviado com sucesso!',
+	// 			// 	'Em breve entraremos em contato com você.',
+	// 			// 	'success'
+	// 			// );
+	// 		});
+
+	// 	}
+
+	// 	// Newsletter
+	// 	if ('142' == event.detail.contactFormId) {
+
+	// 		var email = event.detail.inputs[0].value;
+
+	// 		var data_array = [{
+	// 				name: 'email',
+	// 				value: email
+	// 			},
+	// 			{
+	// 				name: 'identificador',
+	// 				value: 'cadastro-de-newsletter'
+	// 			},
+	// 			{
+	// 				name: 'token_rdstation',
+	// 				value: token
+	// 			}
+	// 		];
+
+	// 		RdIntegration.post(data_array, function() {
+	// 			console.log('RD: Lead enviado!');
+	// 			location = '/obrigado-newsletter';
+	// 			// Swal.fire(
+	// 			// 	'Bem-vindo a nossa News!',
+	// 			// 	'Obrigado por se cadastrar.',
+	// 			// 	'success'
+	// 			// );
+	// 		});
+
+	// 	}
+
+	// 	//Solicite Orçamento - Página Inicial (POPUP)
+	// 	if ('1040' == event.detail.contactFormId) {
+
+	// 		// Muda ordem popup
+	// 		var nome = event.detail.inputs[0].value;
+	// 		var email = event.detail.inputs[1].value;
+	// 		var tel = event.detail.inputs[2].value;
+	// 		var empresa = event.detail.inputs[3].value;
+	// 		var cnpjs = event.detail.inputs[4].value;
+	// 		var cargo = event.detail.inputs[5].value;
+
+	// 		var data_array = [{
+	// 				name: 'nome',
+	// 				value: nome
+	// 			},
+	// 			{
+	// 				name: 'email',
+	// 				value: email
+	// 			},
+	// 			{
+	// 				name: 'empresa',
+	// 				value: empresa
+	// 			},
+	// 			{
+	// 				name: 'Cargo 2',
+	// 				value: cargo
+	// 			},
+	// 			{
+	// 				name: 'quantidade_de_pontos_de_vendas',
+	// 				value: cnpjs
+	// 			},
+	// 			{
+	// 				name: 'telefone',
+	// 				value: tel
+	// 			},
+	// 			{
+	// 				name: 'identificador',
+	// 				value: 'Formulário de Proposta da Página Inicial'
+	// 			},
+	// 			{
+	// 				name: 'token_rdstation',
+	// 				value: token
+	// 			}
+	// 		];
+
+	// 		RdIntegration.post(data_array, function() {
+	// 			console.log('RD: Lead enviado!');
+	// 			location = '/agradecimento-home';
+	// 		});
+
+	// 	}
+
+	// 	//Solicite Orçamento - Página do eExtrato (POPUP)
+	// 	if ('1041' == event.detail.contactFormId) {
+
+	// 		// Muda ordem popup
+	// 		var nome = event.detail.inputs[0].value;
+	// 		var email = event.detail.inputs[1].value;
+	// 		var tel = event.detail.inputs[2].value;
+	// 		var empresa = event.detail.inputs[3].value;
+	// 		var cnpjs = event.detail.inputs[4].value;
+	// 		var cargo = event.detail.inputs[5].value;
+
+	// 		var data_array = [{
+	// 				name: 'nome',
+	// 				value: nome
+	// 			},
+	// 			{
+	// 				name: 'email',
+	// 				value: email
+	// 			},
+	// 			{
+	// 				name: 'empresa',
+	// 				value: empresa
+	// 			},
+	// 			{
+	// 				name: 'Cargo 2',
+	// 				value: cargo
+	// 			},
+	// 			{
+	// 				name: 'quantidade_de_pontos_de_vendas',
+	// 				value: cnpjs
+	// 			},
+	// 			{
+	// 				name: 'telefone',
+	// 				value: tel
+	// 			},
+	// 			{
+	// 				name: 'identificador',
+	// 				value: 'Formulário de Proposta do Extrato'
+	// 			},
+	// 			{
+	// 				name: 'token_rdstation',
+	// 				value: token
+	// 			}
+	// 		];
+
+	// 		RdIntegration.post(data_array, function() {
+	// 			console.log('RD: Lead enviado!');
+	// 			location = '/agradecimento-eextrato';
+	// 		});
+
+	// 	}
+
+	// 	//Solicite Orçamento - Página da Concilição de Cartões (POPUP)
+	// 	if ('1042' == event.detail.contactFormId) {
+
+	// 		// Muda ordem popup
+	// 		var nome = event.detail.inputs[0].value;
+	// 		var email = event.detail.inputs[1].value;
+	// 		var tel = event.detail.inputs[2].value;
+	// 		var empresa = event.detail.inputs[3].value;
+	// 		var cnpjs = event.detail.inputs[4].value;
+	// 		var cargo = event.detail.inputs[5].value;
+
+	// 		var data_array = [{
+	// 				name: 'nome',
+	// 				value: nome
+	// 			},
+	// 			{
+	// 				name: 'email',
+	// 				value: email
+	// 			},
+	// 			{
+	// 				name: 'empresa',
+	// 				value: empresa
+	// 			},
+	// 			{
+	// 				name: 'Cargo 2',
+	// 				value: cargo
+	// 			},
+	// 			{
+	// 				name: 'quantidade_de_pontos_de_vendas',
+	// 				value: cnpjs
+	// 			},
+	// 			{
+	// 				name: 'telefone',
+	// 				value: tel
+	// 			},
+	// 			{
+	// 				name: 'identificador',
+	// 				value: 'Formulário de Proposta Concilição de Cartões'
+	// 			},
+	// 			{
+	// 				name: 'token_rdstation',
+	// 				value: token
+	// 			}
+	// 		];
+
+	// 		RdIntegration.post(data_array, function() {
+	// 			console.log('RD: Lead enviado!');
+	// 			location = '/agradecimento-conciliacao-de-cartoes';
+	// 		});
+
+	// 	}
+
+	// 	//Solicite Orçamento - Página Inicial (POPUP) NOVO
+	// 	if ('1168' == event.detail.contactFormId) {
+
+	// 		// Muda ordem popup
+	// 		var nome = event.detail.inputs[0].value;
+	// 		var email = event.detail.inputs[1].value;
+	// 		var cargo = event.detail.inputs[2].value;
+	// 		var empresa = event.detail.inputs[3].value;
+	// 		var atuacao = event.detail.inputs[4].value;
+	// 		var cnpjs = event.detail.inputs[5].value;
+	// 		var faturamento = event.detail.inputs[6].value;
+	// 		var transacoes = event.detail.inputs[7].value;
+	// 		var tel = event.detail.inputs[8].value;
+	// 		//[9] checkbox term
+
+
+	// 		var data_array = [{
+	// 				name: 'nome',
+	// 				value: nome
+	// 			},
+	// 			{
+	// 				name: 'email',
+	// 				value: email
+	// 			},
+	// 			{
+	// 				name: 'Cargo 2',
+	// 				value: cargo
+	// 			},
+	// 			{
+	// 				name: 'empresa',
+	// 				value: empresa
+	// 			},
+	// 			{
+	// 				name: 'Segmento',
+	// 				value: atuacao
+	// 			},
+	// 			{
+	// 				name: 'quantidade_de_pontos_de_vendas',
+	// 				value: cnpjs
+	// 			},
+	// 			{
+	// 				name: 'Faturamento',
+	// 				value: faturamento
+	// 			},
+	// 			{
+	// 				name: 'Transações',
+	// 				value: transacoes
+	// 			},
+	// 			{
+	// 				name: 'telefone',
+	// 				value: tel
+	// 			},
+	// 			{
+	// 				name: 'identificador',
+	// 				value: 'Formulário de Proposta da Página Inicial'
+	// 			},
+	// 			{
+	// 				name: 'token_rdstation',
+	// 				value: token
+	// 			}
+	// 		];
+
+
+	// 		RdIntegration.post(data_array, function() {
+	// 			console.log('RD: Lead enviado!');
+	// 			location = '/agradecimento-home';
+	// 		});
+
+	// 	}
+
+	// 	//Solicite Orçamento - Página do eExtrato (POPUP) NOVO
+	// 	if ('1169' == event.detail.contactFormId) {
+
+	// 		// Muda ordem popup
+	// 		var nome = event.detail.inputs[0].value;
+	// 		var email = event.detail.inputs[1].value;
+	// 		var cargo = event.detail.inputs[2].value;
+	// 		var empresa = event.detail.inputs[3].value;
+	// 		var atuacao = event.detail.inputs[4].value;
+	// 		var cnpjs = event.detail.inputs[5].value;
+	// 		var faturamento = event.detail.inputs[6].value;
+	// 		var transacoes = event.detail.inputs[7].value;
+	// 		var tel = event.detail.inputs[8].value;
+	// 		//[9] checkbox term
+
+	// 		var data_array = [{
+	// 				name: 'nome',
+	// 				value: nome
+	// 			},
+	// 			{
+	// 				name: 'email',
+	// 				value: email
+	// 			},
+	// 			{
+	// 				name: 'Cargo 2',
+	// 				value: cargo
+	// 			},
+	// 			{
+	// 				name: 'empresa',
+	// 				value: empresa
+	// 			},
+	// 			{
+	// 				name: 'Segmento',
+	// 				value: atuacao
+	// 			},
+	// 			{
+	// 				name: 'quantidade_de_pontos_de_vendas',
+	// 				value: cnpjs
+	// 			},
+	// 			{
+	// 				name: 'Faturamento',
+	// 				value: faturamento
+	// 			},
+	// 			{
+	// 				name: 'Transações',
+	// 				value: transacoes
+	// 			},
+	// 			{
+	// 				name: 'telefone',
+	// 				value: tel
+	// 			},
+	// 			{
+	// 				name: 'identificador',
+	// 				value: 'Formulário de Proposta do Extrato'
+	// 			},
+	// 			{
+	// 				name: 'token_rdstation',
+	// 				value: token
+	// 			}
+	// 		];
+
+	// 		RdIntegration.post(data_array, function() {
+	// 			console.log('RD: Lead enviado!');
+	// 			location = '/agradecimento-eextrato';
+	// 		});
+
+	// 	}
+
+	// 	//Solicite Orçamento - Página da Concilição de Cartões (POPUP) NOVO
+	// 	if ('1170' == event.detail.contactFormId) {
+
+	// 		// Muda ordem popup
+	// 		var nome = event.detail.inputs[0].value;
+	// 		var email = event.detail.inputs[1].value;
+	// 		var cargo = event.detail.inputs[2].value;
+	// 		var empresa = event.detail.inputs[3].value;
+	// 		var atuacao = event.detail.inputs[4].value;
+	// 		var cnpjs = event.detail.inputs[5].value;
+	// 		var faturamento = event.detail.inputs[6].value;
+	// 		var transacoes = event.detail.inputs[7].value;
+	// 		var tel = event.detail.inputs[8].value;
+	// 		//[9] checkbox term
+
+	// 		var data_array = [{
+	// 				name: 'nome',
+	// 				value: nome
+	// 			},
+	// 			{
+	// 				name: 'email',
+	// 				value: email
+	// 			},
+	// 			{
+	// 				name: 'Cargo 2',
+	// 				value: cargo
+	// 			},
+	// 			{
+	// 				name: 'empresa',
+	// 				value: empresa
+	// 			},
+	// 			{
+	// 				name: 'Segmento',
+	// 				value: atuacao
+	// 			},
+	// 			{
+	// 				name: 'quantidade_de_pontos_de_vendas',
+	// 				value: cnpjs
+	// 			},
+	// 			{
+	// 				name: 'Faturamento',
+	// 				value: faturamento
+	// 			},
+	// 			{
+	// 				name: 'Transações',
+	// 				value: transacoes
+	// 			},
+	// 			{
+	// 				name: 'telefone',
+	// 				value: tel
+	// 			},
+	// 			{
+	// 				name: 'identificador',
+	// 				value: 'Formulário de Proposta Concilição de Cartões'
+	// 			},
+	// 			{
+	// 				name: 'token_rdstation',
+	// 				value: token
+	// 			}
+	// 		];
+
+	// 		RdIntegration.post(data_array, function() {
+	// 			console.log('RD: Lead enviado!');
+	// 			location = '/agradecimento-conciliacao-de-cartoes';
+	// 		});
+
+	// 	}
+
+	// }, false);
+
+	document.addEventListener('wpcf7invalid', function(event) {
+		swal(
+			'Atenção',
+			'Um ou mais campos possuem um erro. Verifique e tente novamente.',
+			'warning'
+		)
+	}, false);
+
+	document.addEventListener('wpcf7mailfailed', function(event) {
+		swal(
+			'Erro',
+			'Ocorreu um erro ao tentar enviar sua mensagem. Tente novamente mais tarde.',
+			'error'
+		)
+	}, false);
+
+</script>
+<?php echo get_field('acf-rodape-codigo', 'option'); ?>
+</body>
+</html>
