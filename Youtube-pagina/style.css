@@ -1,9 +1,19 @@
 @import url(reset.css);
 
 html { background-color: #000; } 
+
+h1{
+    font-size: 20px;
+    color: #000;
+    font-weight: 900;
+    margin-top: 16px;
+
+}
+
+
 body {
     min-height: 1400px;
-    max-width: 1200px;
+    max-width: 1440px;
     background-color: papayawhip; 
     margin: 0 auto;
     scroll-behavior: inherit;
@@ -17,7 +27,7 @@ nav{
 .topo{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     background-color: #f6f6f6;
     height: 80px;
     padding: 15px;
@@ -33,7 +43,7 @@ nav{
     display: inline-flex;
     padding-top: 0;
     align-items: center;
-    padding-right: 30%;
+    padding-right: 57%;
 }
 .espacador{
     margin-right: 5%;
@@ -41,12 +51,37 @@ nav{
 }
 
 #yt{
-    margin-right: 35% ;
+    margin-right: 50% ;
 }
 
-body{
+.corpo {
+    background-color: aqua;
+    display: grid;
+
+}
+
+.video{
+    display: inline-block;
+    max-width: 952px;
+    margin-left: 40px;
+}
+
+.inscrevase{
+    margin-top: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+#canal{padding-left: 10px;}
+.nome-canal{
+    font-size: 14px;
+    font-weight: 800;
+    color: #000;
+}
+.nome-inscritos{
+    font-size: 14px;
+    font-family: 400;
+    color: #515151;
+}
+#inscrevase{
     
 }
-
-
-
