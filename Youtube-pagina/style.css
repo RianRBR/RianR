@@ -1,35 +1,52 @@
 @import url(reset.css);
 
-html, header{
-  
-    max-height: 1440px;
-    max-width: 1440px;
+html { background-color: #000; } 
+body {
+    min-height: 1400px;
+    max-width: 1200px;
+    background-color: papayawhip; 
+    margin: 0 auto;
+    scroll-behavior: inherit;
 }
-html, body{
-    min-height: 100%;
-    max-width: 1440px;
+nav{
+    display: inline-flex;
+    padding: 10px;
+    align-items: baseline;
 }
-html, footer{
-    min-height: 100%;
-    max-width: 1440px;
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: #f6f6f6;
+    height: 80px;
+    padding: 15px;
+    max-width: auto;
+
 }
-header{
-    color: #000000;
+
+.navega{
+    padding: 0px 25px 0px 10px;
+    justify-content: baseline;
 }
+#pesquisa{
+    display: inline-flex;
+    padding-top: 0;
+    align-items: center;
+    padding-right: 30%;
+}
+.espacador{
+    margin-right: 5%;
+    
+}
+
+#yt{
+    margin-right: 35% ;
+}
+
 body{
-    color: #000;
+    
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
