@@ -9,124 +9,112 @@ h1{
     margin-top: 16px;
 
 }
-
+iframe{
+    border-radius: 5px;
+}
 
 body {
     max-height: 100vh;
     min-height: 1000px;
-    max-width: 1440px;
+    max-width: 1450px;
     background-color: papayawhip; 
     margin: 0 auto;
     scroll-behavior: inherit;
     display: flex;
-    align-items: flex-start;
-}
-nav{
-    display: inline-flex;
-    padding: 10px;
-    align-items: baseline;
+    justify-content: center;
 }
 
-.topo{
+.container{
+    margin: 100px 20px 20px 20px;
+    width: 1350px;
+    height: 100vh;
     display: flex;
+    text-align: center;
+    background-color: purple;
     flex-direction: row;
-    align-items: center;
-    background-color: #f6f6f6;
-    height: 80px;
-    padding: 15px;
-    margin-bottom: 50px;
+    flex-wrap: nowrap;
 
 }
-
-.navega{
-    padding: 0px 25px 0px 10px;
-    justify-content: baseline;
-}
-#pesquisa{
-    display: inline-flex;
-    padding-top: 0;
-    align-items: center;
-    padding-right: 57%;
-}
-.espacador{
-    margin-right: 5%;
-    
-}
-
-#yt{
-    margin-right: 50% ;
-}
-
-.corpo {
+.player{
+    display: inline-grid;
+    flex-direction: row;
     background-color: aqua;
-    display: grid;
-
+    width: 1000px;
+    height: 100vh;
+    flex-wrap: nowrap;
 }
+.videos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blue;
+    width: 350px;
 
-.video{
-    display: inline-block;
-    max-width: 952px;
-    margin-left: 40px;
-}
-
-.inscrevase{
-    margin-top: 16px;
-    display: inline-flex;
-    align-items: center;    
-    width: auto;
 }
 .canal{
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    gap: 50px;
-}
-.nome-canal{
-    font-size: 14px;
-    font-weight: 800;
-    color: #000;
-}
-.nome-inscritos{
-    font-size: 14px;
-    font-family: 400;
-    color: #515151;
-}
-
-.btn-inscrevase{
-    font-size: 14px;
-    font-weight: 800;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 159px;
-    background-color: #ff0000;
-    color: #fff;
-    padding: 5px 10px;
-    margin-left: 40px;
-    border-radius: 2px;
-    text-decoration: none;
-    box-sizing: border-box ;
-    transition: 0.8s;
-    
+    height: 42px;
+    width: 1000px;
+    background-color: aquamarine;
+}
 
+.icone-canal{
+    height: 42px;
+    width: auto;
+    display: inline-flex;
+    align-items: center ;
 }
-.btn-inscrevase:hover{
-    color:#ffffff;
-    background: #ff0000a2;
-    letter-spacing: 0.5px;
+.qtd-nome-inscrito{
+    margin-left: 10px;
+    display: grid;
+    justify-items: start;
+    margin-right: 40px;
+    background-color:antiquewhite;
 }
-.texto-sb{
+
+#nome-canal{
     font-size: 14px;
     font-weight: 800;
     color: #000;
-    font-family: 'Roboto';
+}
+#qtd-inscritos{
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151;
+}
+.btn-inscrevase{
+    background-color: #cc0000;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 15px 80px;
+    transition: .4s;
+    margin-right: 40px;
+    
+    
+}
+.btn-inscrevase:hover{
+    background-color: #cc000088;
+    letter-spacing: 0.1px;    
 
 }
-.icone{
-
-    height: 24px;
-    width: 24px;
-
+.like:hover{
+    fill: #960000;
+    transition: 15s;
+}
+.nome-like{
+    font-size: 14px;
+    font-weight: 800;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 60px;
+}
+.nome-like p{ 
+    margin-right: 20px;
 }
