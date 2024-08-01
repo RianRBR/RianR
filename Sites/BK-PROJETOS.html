@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+<style>
+  .swiper3 { 
+      width: 100%;
+      height: 445px;
+      background-color: transparent;
+     
+    }
+    
+    
+    .text-animation-slide-wrapper > h3{
+        font-size: 35px;
+    }
+    
+    .text-animation-slide-wrapper > span{
+        font-size: 16px!important;
+    }
+    
+    .swiper-slide {
+        padding: 0 !important;
+        margin: 0 10px !important;
+        text-align: center;
+        font-size:18px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .width--min{
+        min-width: 300px;
+         /*/max-width: 800px;/ */
+         max-width: 438px;
+    }
+  
+  
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .wrapper-slide-img{
+        overflow: hidden;
+        transition: 1s;
+        border-radius:20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: end;
+        
+    }
+    
+    .wrapper-slide-img:hover{
+        scale: 1.05;
+        transition: 0.3s;
+        z-index: 888888;
+        filter: grayscale(0);
+    }
+    
+    .text-animation-slide-wrapper{
+        width: 100%;
+        background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 49%, rgba(255,255,255,0) 100%);
+        transform: translateY(58%);
+        transition: 1.3s;
+        padding: 0 30px 20px 30px;
+    }
+    
+    
+    .text-animation-slide-wrapper:hover{
+        transform: translateY(0px);
+        transition: 0.4s;
+    }
+    
+    
+    @media(max-width:1024px){
+        .text-animation-slide-wrapper > h3{
+        font-size: 30px;
+    }
+    
+    .text-animation-slide-wrapper > span{
+        font-size: 15px!important;
+    }
+    
+        .text-animation-slide-wrapper{
+        transform: translateY(63%);
+    }
+    .eventos-slide{
+        transform: translateY(50%);
+    }
+    .endo-slide{
+        transform: translateY(55%);
+    }
+    .digi-slide{
+        transform: translateY
+        (55%);
+        
+    }
+    .ativa-slide{
+        transform: translateY(69%);
+    }
+    }
+    .ativa-slide{
+        transform: translateY(54%);
+    }
+    
+     @media(max-width:425px){
+        
+        .width--min{
+        min-width: 300px important;
+        max-width: 300px important;
+    }
+        
+       .swiper3 {
+      width: 100%;
+      height: 460px;
+      background-color: transparent;
+    } 
+
+    .text-animation-slide-wrapper{
+        transform: translateY(70%);
+    }
+    
+    .ativa-slide{
+        transform: translateY(79%)!important;
+    }
+    
+    .eventos-slide{
+        transform: translateY(56%);
+    }
+    .endo-slide{
+        transform: translateY(65%);
+    }
+
+    }
+    
+    @media(min-width:2000px){
+       .swiper3{
+           min-height: 550px;
+       } 
+       .text-animation-slide-wrapper{
+        transform: translateY(40%);
+    }
+    }
+   
+    .text-animation-slide-wrapper span{
+        display: flex;
+        font-size: 15px;
+        line-height: 1.0;
+        text-align: start;
+        color:white;
+        font-family: "VisbyCF-Regular", Sans-serif;
+    }
+    
+    .text-animation-slide-wrapper h3{
+        text-align: end;
+        color: white;
+        font-family: "VisbyCF-bold", Sans-serif;
+    }
+    /*Kawai*/
+    .img01-1slide-projeto{
+        background-image: url('https://prontoagencia.com.br/wp-content/uploads/2024/08/Kwai.jpeg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    /*BRF PET*/
+    .img02-1slide-projeto{
+        background-image: url('https://prontoagencia.com.br/wp-content/uploads/2024/08/BRF-Pet-Foto-Capa.jpeg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    /*Fast Shop*/
+    .img03-1slide-projeto{
+        background-image: url('https://prontoagencia.com.br/wp-content/uploads/2024/08/Fast-Shop-1.jpeg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+     /*Aço Cearence*/
+    .img04-1slide-projeto{
+        background-image: url('https://prontoagencia.com.br/wp-content/uploads/2024/08/Aco-Cearense-Encontro-Anual-de-Vendas-2022-1.jpeg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+       /*Aço Cearence*/
+    .img05-1slide-projeto{
+        background-image: url('https://prontoagencia.com.br/wp-content/uploads/2024/08/Aco-Cearense-Encontro-Anual-de-Vendas-2022-1.jpeg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .swiper-button-next{
+        color: white!important; 
+        font-weight:800;
+    }
+    .swiper-button-prev{
+        color: white!important; 
+        font-weight:800;
+    }
+
+.container-projetos {
+    position: relative !important;
+    overflow: hidden;
+   border-radius: 20px;
+
+    max-width: 438px;
+    max-height: 445px;
+}
+ .container-projetos:hover .img {
+	 transform: scale(1.1);
+}
+
+.container-projetos .img h3{
+    padding: 20px;
+    text-align: end;
+    color: white;
+    font-family: "VisbyCF-bold", Sans-serif;
+    font-size: 35px;
+}
+ .container-projetos:hover .img h3 {
+	 display: none;
+}
+ .container-projetos:hover .overlay {
+	 height: 100%;
+}
+ .container-projetos .img {
+	 display: flex;
+	 transition: transform 0.5s;
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 20px;
+	 align-items: flex-end;
+     justify-content: flex-end;
+}
+ .container-projetos .img p {
+	 text-align: center;
+	 width: 100%;
+	 margin-right: 33px;
+	 color: #fff;
+	 font-family: 'Poppins';
+	 font-size: 27px;
+	 line-height: 35px;
+	 font-weight: 700;
+	 transition: transform 0.5s;
+	 margin-bottom: 37px;
+}
+ @media screen and (min-width: 992px) and (max-width: 1200px) {
+	 .container-projetos .img p {
+		 margin-right: 70px;
+	}
+}
+ @media screen and (max-width: 992px) {
+	 .container-projetos .img p {
+		 margin-right: 0;
+	}
+}
+ .container-projetos .overlay {
+	 height: 0;
+	 width: 100%;
+	 max-width: 438px;
+	/* background: linear-gradient(180deg, rgba(2,0,36,0.21052170868347342) 18%, rgba(0,0,0,0.700717787114846) 66%);
+	;
+	 */
+	 background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 1) 100%); 
+ 
+	 position: absolute;
+	 
+	 bottom: 0;
+	 overflow: hidden;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 flex-direction: column;
+	 padding: 0 40px;
+	 text-align: center;
+	 font-size: 14px;
+	 transition: height 0.5s;
+}
+ .container-projetos .overlay h5 {
+	 color: #fff;
+	 font-size: 16px;
+	 line-height: 22px;
+	 font-family: 'Poppins';
+}
+
+.container-projetos .overlay span {
+	    display: flex;
+        font-size: 16px;
+        line-height: 1.0;
+        text-align: start;
+        color:white;
+        font-family: "VisbyCF-Regular", Sans-serif;
+}
+
+ .container-projetos .overlay a {
+	 color: #fff;
+	 text-decoration: underline;
+}
+ 
+    
+  </style>
+  
+  <body>
+    
+<!-- Troca -->
+    <div class="swiper3 mySwiperw3">
+        <div class="swiper-wrapper">
+            
+
+        <div class="swiper-slide container-projetos ">
+            <div class="img img02-1slide-projeto">
+               
+            </div>
+            
+            <div class="overlay">   
+                <h3>
+                    <a href="#meu-popup2">BRF Pet</a>
+                </h3>
+            </div> 
+        </div> 
+
+        <div class="swiper-slide container-projetos ">
+            <div class="img img03-1slide-projeto">
+                
+            </div>
+            
+            <div class="overlay">   
+                <h3>
+                    <a href="#meu-popup1">Fast Shop</a>
+                </h3>
+            </div> 
+        </div> 
+
+        <div class="swiper-slide container-projetos ">
+            <div class="img img01-1slide-projeto">
+                
+            </div>
+            
+            <div class="overlay">   
+                <h3>
+                    <a href="#meu-popup3">Kwai </a>
+                </h3>
+            </div> 
+        </div> 
+
+        <div class="swiper-slide container-projetos ">
+            <div class="img img04-1slide-projeto">
+                
+            </div>
+            
+            <div class="overlay">   
+                <h3>
+                    <a href="#meu-popup4">Aço Cearense</a>
+                </h3>
+            </div> 
+        </div> 
+
+        <div class="swiper-slide container-projetos ">
+            <div class="img img05-1slide-projeto">
+                
+            </div>
+            
+            <div class="overlay">   
+                <h3>
+                    <a href="#meu-popup2">iRede</a>
+                </h3>
+            </div> 
+        </div> 
+
+        <div class="swiper-slide container-projetos ">
+            <div class="img img06-1slide-projeto">
+                
+            </div>
+            
+            <div class="overlay">   
+                <h3>
+                    <a href="#meu-popup1">Nuclea</a>
+                </h3>
+            </div> 
+        </div> 
+
+        <div class="swiper-slide container-projetos ">
+            <div class="img img01-1slide-projeto">
+                
+            </div>
+            
+            <div class="overlay">   
+                <h3>
+                    <a href="#meu-popup3">Spic Brasil</a>
+                </h3>
+            </div> 
+        </div> 
+
+        <div class="swiper-slide container-projetos ">
+            <div class="img img04-1slide-projeto">
+               
+            </div>
+            
+            <div class="overlay">   
+                <h3>
+                    <a href="#meu-popup4">Nuclea</a>
+                </h3>
+            </div> 
+        </div> 
+
+       
+        </div>
+          <div class="swiper-button-next nxt"></div>
+        <div class="swiper-button-prev prv"></div>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <script>
+      var swiperw = new Swiper(".mySwiperw3", {
+      slidesPerView: 4,
+        spaceBetween: 20,
+      //   centeredSlides: true,
+        //initialSlide:,
+        disaleOnInteraction:true,
+      loop: true,
+      autoplay:true,
+      speed:1000,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      breakpoints: {
+    
+          924: {
+            slidesPerView: 3,
+            spaceBetween: -10,centeredSlides: true,
+          },
+          764: {
+            slidesPerView: 2,
+            spaceBetween: -10,
+            centeredSlides: true,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: -20,
+          //   centeredSlides: true,
+          },
+        },
+    });
+    
+    var swiperContainer = document.querySelector(".mySwiperw");
+      swiperContainer.addEventListener("mouseover", function () {
+        swiperw.autoplay.stop();
+      });
+    
+      // Continue autoplay when mouse leaves the carousel
+      swiperContainer.addEventListener("mouseout", function () {
+        swiperw.autoplay.start();
+      });
+    </script>
+    </body>
+</html>
