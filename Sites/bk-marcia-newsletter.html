@@ -1,0 +1,38 @@
+<?php
+/**
+ * Template Name: Página - Newsletter
+ */
+get_header();
+the_post();
+?>
+
+<div class="page-wrapper content-wrapper page-newsletter">
+    <div class="container">
+        <div class="page-newsletter__form">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newsletter-logo.png"
+                 class="page-newsletter__logo">
+            <h2><?php the_field('call'); ?></h2>
+            <p><?php the_field('content'); ?></p>
+
+            <?php echo do_shortcode(get_field('form')); ?>
+        </div>
+
+        <div class="page-newsletter__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newsletter-marcia.png"
+                 class="page-newsletter__marcia">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/newsletter-detail.png"
+                 class="page-newsletter__detail">
+        </div>
+    </div>
+</div>
+
+<style>
+    .main-header-bundle {
+        display: none;
+    }
+    .footer-wrapper {
+        display: none;
+    }
+</style>
+
+<?php get_footer(); ?>
