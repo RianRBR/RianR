@@ -1,0 +1,390 @@
+<?php get_header(); // Inclui o header.php ?>
+    <section class="home" id="home" >
+        <ul class="slides-container">
+            <?php $loop_slider = new WP_Query( array('post_type' => 'Sliders') ); ?>
+            <?php while ( $loop_slider->have_posts() ) : $loop_slider->the_post() ?>
+                <?php $campos = get_post_meta( get_the_ID(), 'imgslider', true );  ?>
+                <li>
+                    <div class="innerHome">
+                        <div class="slider-txt">
+                            <p class="sub-txt">
+                                <?= $campos[0]['descricao']; ?>
+                            </p>
+                            <h3 class="titulo-slider"><?php the_title(); ?></h3>
+                            <?php if($campos[0]['saiba-mais'] != '#') : ?>
+                                <a href="<?= $campos[0]['saiba-mais'] ?>" class="btn btn-principal btn-lg">Saiba mais</a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <?php $attachment = wp_get_attachment_image_src($campos[0]['slider-imagem'], 'full'); ?>
+                    <img src="<?= $attachment[0] ?>" alt="">
+                </li>
+            <?php endwhile; ?>
+        </ul>
+        <nav class="slides-navigation container">
+            <a href="#" class="next"></a>
+            <a href="#" class="prev"></a>
+        </nav>
+        <div class="mouse-icon"><div class="mouse-animation"></div></div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title center-block text-center">
+                        <h3>Sobre</h3>
+                        <p>Conheça mais sobre a Cintipraxis</p>
+                    </div>
+                    <div class="container innerSection">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="innerTitulo"> NOSSA HISTÓRIA</h4>
+                                <p>
+                                    A Clínica Cintipraxis oferece todo o espectro de procedimentos diagnósticos e terapêuticos em medicina nuclear, incluindo os diversos tipos de cintilografia (perfusão e viabilidade miocárdica , óssea, tireóide, perfusão cerebral, renal, etc) além de tomografia por emissão de fóton único (SPECT) e tomografia por emissão de pósitrons (PET/CT).
+                                    <br><br>
+                                    São também realizados tratamentos com substâncias radioativas em casos de doenças benignas e malignas da tireóide, no tratamento paliativo de dores causadas por comprometimento ósseo de certos tipos de câncer, entre outros.
+                                </p>
+                                <h4 class="innerTitulo">Mais conforto e rapidez na Cintilografia Miocárdica</h4>
+                                <p>
+                                    Nossos equipamentos proporcionam conforto e rapidez inigualáveis. Os estudos são adquiridos na metade do tempo dos equipamentos convencionais. Ao mesmo tempo proporciona imagens de mais qualidade e precisão para um diagnóstico mais confiável. Saiba mais sobre a GE Ventri <a href="http://www3.gehealthcare.com/en/Products/Categories/Nuclear_Medicine/Cardiac_Cameras/Ventri" target="_blank">clicando aqui</a>.
+                                </p>
+                                <h4 class="innerTitulo">PET/CT na Cintipraxis</h4>
+                                <p>
+                                    A Clínica Cintipraxis oferece a seus clientes exames de PET/CT. Equipada com o equipamento GE Discovery 600, que oferece o que existe de melhor em imagem molecular. A equipe compõe-se de médicos especialistas pelo Colégio Brasileiro de Radiologia / Associação Médica Brasileira e com Fellowship no Hospital Universitário de Zurique na Suíça. Descubra mais sobre nosso novo equipamento <a href="http://www3.gehealthcare.com/en/Products/Categories/PET-CT/PET-CT_Scanners/Discovery_PET-CT_600" target="_blank">clicando aqui</a>.
+                                </p>
+
+                                <h4 class="innerTitulo">Ventri - Cintilografia Miocárdica Dedicada</h4>
+                                <p>
+                                    Equipamento dedicado à Cintilografia de Perfusão Miocárdica. Ele proporciona conforto e rapidez inigualáveis. Os estudos são adquiridos na metade do tempo dos equipamentos convencionais. Ao mesmo tempo proporciona imagens de mais qualidade e precisão para um diagnóstico mais confiável. Saiba mais sobre a GE Ventri <a href="http://www3.gehealthcare.com/en/Products/Categories/Nuclear_Medicine/Cardiac_Cameras/Ventri" target="_blank">clicando aqui</a>.
+                                </p>
+
+                                <h4 class="innerTitulo">Cintilografia de Perfusão Miocárdica - Repouso e Esforço</h4>
+                                <p>
+                                    A doença coronariana é a principal causa de morte no Brasil. Ela geralmente é causada pelo depósito progressivo de gordura nas
+                                    paredes dos vasos sanguíneos, o que causa um estreitamento das coronárias e reduz a irrigação sanguínea do músculo do coração.
+                                </p>
+
+                                <p>
+                                    Esta redução pode afetar a função do coração e, algumas vezes, causar “ataques cardíacos”. Alguns dos sintomas comuns são dor
+                                    ou desconforto (aperto) no peito e “falta de ar”. Entretanto, estes sintomas nem sempre são causados por doenças do coração. Além
+                                    disso, alguns pacientes com doença coronariana podem não apresentar sintomas. A Cintilografia de Perfusão Miocárdica e o teste
+                                    ergométrico são exames comuns usados pelos médicos para diagnosticar se há obstrução significativa das coronárias e para avaliar a
+                                    sua severidade de maneira “não-invasiva”.
+                                </p>
+                                <!--<div class="slider" id="sliderSobre">
+                                    <div class="item"> <img src="<?php bloginfo( 'template_url' ); ?>/img/bannerContato.png" /></div>
+                                </div>-->                            
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4 class="innerTitulo">Missão</h4>
+                                <p>Atuar em Medicina Nuclear com excelência, garantindo aos pacientes diagnóstico e tratamento com segurança, rapidez e qualidade.
+</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="innerTitulo">Visão</h4>
+                                <p>Garantir a posição de referência em Medicina Nuclear no estado do Ceará, com tecnologia de ponta e técnicas avançadas em diagnóstico e tratamento.
+</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="innerTitulo">Valores</h4>
+                                <ul style="padding-inline-start: 20px;">
+                                    <li>Comprometimento</li>
+                                    <li>Ética</li>
+                                    <li>Honestidade</li>
+                                    <li>Atendimento diferenciado e humanizado</li>
+                                    <li>Respeito</li>
+                                    <li>Credibilidade</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="exames" id="exames">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title center-block text-center">
+                        <h3>Exames</h3>
+                        <p>Confira nossos exames</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="areaExames" data-stellar-background-ratio="0.4">
+            <div class="color-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="innerExame">
+                            <div class="slider">
+                                <?php
+                                    $args = array('post_type' => 'Exames', 'posts_per_page' => 40);
+                                    $loop = new WP_Query( $args );
+                                ?>
+                                <?php while ( $loop->have_posts() ) : $loop->the_post() ?>
+                                    <div class="item">
+                                        <div class="innerSliderExame">
+                                            <h2><?php the_title(); ?></h2>
+                                            <p><?php the_excerpt(); ?>
+                                            <a id="btnLeiaMaisExame" data-toggle="modal" data-target="#myModal" data-ajax="true" data-ajax-method="GET" data-ajax-mode="replace" data-ajax-success="mostrarModal" data-ajax-update="#actionModal" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Leia mais...</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                <?php endwhile;  ?>
+                            </div>
+                            <div id="botoes" class="list-inline text-center">
+                                <!--<li>
+                                    <a href="#" class="btn btn-principal text-center" data-toggle="modal" data-target="#mTrabalheConosco">Todos os exames</a>
+                                </li>-->
+                                <li>
+                                    <a href="#" class="btn btn-principal text-center" data-toggle="modal" data-target="#mAgendaExame">Agende seu exame</a>
+                                </li>
+                                <!--<li>
+                                    <a href="#" class="btn btn-principal text-center" data-toggle="modal" data-target="#">Ver status de exame</a>
+                                </li>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="convenios" id="convenios">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title center-block text-center">
+                        <h3>Convênios</h3>
+                        <p>Procurando seu convenio?</p>
+                    </div>
+                    <div class="container innerSection">
+                        <div class="row sliderConvenios">
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/aeronautica.jpg" alt="Aeronautica"></div>
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/albert-sabin.jpg" alt="Hospital Infantil Albert Sabin"></div> -->
+                           <!--<div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/amil.jpg" alt="Amil"></div>-->
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/Apcef.jpg" alt="Apcef"></div> -->
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/assefaz.jpg" alt="Fundação Assefaz"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/bradesco-saude.jpg" alt="Bradesco Saúde"></div>
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/caace.jpg" alt="CAACE"></div> -->
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/cafaz.jpg" alt="Cafaz"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/camed.jpg" alt="Camed"></div>
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/capesesp.jpg" alt="Capesesp"></div> -->
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/cassi.jpg" alt="Cassi"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/fachesf.jpg" alt="Fachesf"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/famed.jpg" alt="Famed"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/funcef.jpg" alt="Funcef"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/fusex.jpg" alt="Fusex"></div>
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/gama-saude.jpg" alt="Gama Saúde"></div> -->
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/gamec.jpg" alt="Gamec"></div> -->
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/geap.jpg" alt="Geap"></div>
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/golden.jpg" alt="Golden Cross"></div> -->
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/hapvida.jpg" alt="Hapvida"></div>
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/hgf.jpg" alt="HGF"></div> -->
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/hgwa.jpg" alt="HGWA"></div> -->
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/hospital-messejana.jpg" alt="Hospital Messejana"></div> -->
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/ipm.jpg" alt="IPM"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/issec.jpg" alt="Issec"></div>
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/life-cropped.jpg" alt="Life Cropped"></div> -->
+                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/mediservice.jpg" alt="Mediservice"></div> -->
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/petrobras.jpg" alt="Petrobras"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/postal-saude.jpg" alt="Postal Saúde"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/saude-pas.jpg" alt="Saúde Pas"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/sulamerica.jpg" alt="Sulamérica"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/sus.jpg" alt="SUS"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/unimed.jpg" alt="Unimed"></div>
+                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/vale-saude.jpg" alt="vale-saude"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipe" id="equipe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title center-block text-center">
+                        <h3>Nossa equipe</h3>
+                        <p>Conheça um pouco mais da equipe que forma a Cintipraxis</p>
+                    </div>
+                    <div class="container innerSection">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <?php echo do_shortcode("[tmm name='equipe-medica']"); ?>
+								
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title center-block text-center">
+                        <h3>Blog</h3>
+                        <p>Fique sempre atualizado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="areaBlog">
+            <div class="container">
+                <div class="row">
+                        <div id="posts" class="posts">
+                           <?= do_shortcode('[ajax_load_more post_type="post" scroll="false" posts_per_page="3" button_label="Mais posts" button_loading_label="Carregando" container_type="div"]') ?>
+                        </div>
+                    <!--<div class="clearfix visible-xs-block visible-sm-block"></div>
+                    <div class="col-md-4">
+                        <aside class="sidebar">
+                            <!--<div id="busca">
+                                <form action="">
+                                    <div class="input-group">
+                                      <input type="text" class="form-control" placeholder="Buscar...">
+                                      <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                      </span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="categorias">
+                                <h4>Categorias</h4>
+                                <ul>
+                                    <?php
+                                        wp_list_categories('orderby=name&exclude=3&title_li=');
+                                    ?>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="como-chegar" id="como-chegar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title center-block text-center">
+                        <h3>Como chegar</h3>
+                        <p>Instruções</p>
+                    </div>
+                    <div class="container innerSection">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="local">
+                                    <img width="544px" src="<?php bloginfo('template_url') ?>/img/mapa-chegar.jpg">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>
+                                Devido ao novo binário da Av Santos Dumont, estamos com outro acesso de entrada a nossa empresa. Clientes e visitantes devem seguir as seguintes orientações:
+                                </h4>
+                                <p>
+                                   1. Vindo pela Av. Washington Soares/Rua Prof. Otávio Lobo, basta atravessar a Av Santos Dumont e pegar   primeira rua a esquerda (Rua Joaquim Lima) e entrar ao lado da emergência do Hospital São Mateus;
+                                   <br>
+                                </p>
+                                <p>
+                                   2. Pela Av Santos Dumont não será possível entrar no estacionamento do Complexo São Mateus devido as obras do binário, basta seguir até o próximo sinal e entra na rua (Rua Professor Otávio Lobo) a esquerda e novamente pegar esquerda para entrar ao lado da emergência do Hospital São Mateus;
+                                   <br>
+                                </p>
+                                <p>
+                                   3. Se vem na direção da Rua Júlio Azevedo basta passar a Av Santos Dumont e também a Rua Joaquim Lima e pegar a próxima rua (Rua Pereira de Miranda) a direita e depois a direita novamente (Rua Joaquim Lima);
+                                   <br>
+                                </p>
+                                <p>
+                                   4. Para quem vem do HGF basta entrar na Rua Joaquim Lima e entrar ao lado da emergência do Hospital São Mateus;
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title center-block text-center">
+                        <h3>Contato</h3>
+                        <p>Entre em contato conosco</p>
+                    </div>
+                    <div class="container innerSection">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <?= do_shortcode('[contact-form-7 id="15" title="Contato"]')  ?>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Quer trabalhar conosco?</h4>
+                                <div class="text-center">
+                                    <a href="#" class="btn btn-principal text-center" data-toggle="modal" data-target="#mTrabalheConosco">Envie seu currículo</a>
+                                </div>
+                                <div id="mapa">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.358222680642!2d-38.52851085703472!3d-3.7318615980801173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c746296da2cac1%3A0xd97f9dc6c26a3276!2sCintipraxis+Medicina+Nuclear!5e0!3m2!1spt-BR!2sbr!4v1512049978037" width="100%" height="310" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                                <p>
+                                    Cintipraxis <br>
+                                    Fortaleza, Ceará <br>
+                                    Torre Saúde (térreo) - Av. Santos Dumont, 5753 - Papicú - (85) 3262-1212<br>
+                                    Segunda a quinta de 07:00 as 18:00 e na sexta de 07:00 as 17:00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Trabalhe conosco -->
+    <div class="modal fade" id="mTrabalheConosco" tabindex="-1" role="dialog" aria-labelledby="mTrabalheConoscoLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="mTrabalheConoscoLabel">Trabalhe conosco</h4>
+          </div>
+          <div class="modal-body">
+            <?= do_shortcode('[contact-form-7 id="17" title="Trabalhe conosco"]')  ?>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Agende seu exame -->
+    <div class="modal fade" id="mAgendaExame" tabindex="-1" role="dialog" aria-labelledby="mAgendaExameLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="mAgendaExameLabel">Agende seu exame</h4>
+          </div>
+          <div class="modal-body">
+            <?= do_shortcode('[contact-form-7 id="22" title="Agende seu exame"]')  ?>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<?php get_footer(); // Inclui o footer.php  ?>
