@@ -33,44 +33,27 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title center-block text-center">
-                        <h3>Sobre</h3>
+                        <h3>QUEM SOMOS</h3>
                         <p>Conheça mais sobre a Cintipraxis</p>
                     </div>
                     <div class="container innerSection">
                         <div class="row">
                             <div class="col-md-12">
-                                <h4 class="innerTitulo"> NOSSA HISTÓRIA</h4>
-                                <p>
-                                    A Clínica Cintipraxis oferece todo o espectro de procedimentos diagnósticos e terapêuticos em medicina nuclear, incluindo os diversos tipos de cintilografia (perfusão e viabilidade miocárdica , óssea, tireóide, perfusão cerebral, renal, etc) além de tomografia por emissão de fóton único (SPECT) e tomografia por emissão de pósitrons (PET/CT).
-                                    <br><br>
-                                    São também realizados tratamentos com substâncias radioativas em casos de doenças benignas e malignas da tireóide, no tratamento paliativo de dores causadas por comprometimento ósseo de certos tipos de câncer, entre outros.
-                                </p>
-                                <h4 class="innerTitulo">Mais conforto e rapidez na Cintilografia Miocárdica</h4>
-                                <p>
-                                    Nossos equipamentos proporcionam conforto e rapidez inigualáveis. Os estudos são adquiridos na metade do tempo dos equipamentos convencionais. Ao mesmo tempo proporciona imagens de mais qualidade e precisão para um diagnóstico mais confiável. Saiba mais sobre a GE Ventri <a href="http://www3.gehealthcare.com/en/Products/Categories/Nuclear_Medicine/Cardiac_Cameras/Ventri" target="_blank">clicando aqui</a>.
-                                </p>
-                                <h4 class="innerTitulo">PET/CT na Cintipraxis</h4>
-                                <p>
-                                    A Clínica Cintipraxis oferece a seus clientes exames de PET/CT. Equipada com o equipamento GE Discovery 600, que oferece o que existe de melhor em imagem molecular. A equipe compõe-se de médicos especialistas pelo Colégio Brasileiro de Radiologia / Associação Médica Brasileira e com Fellowship no Hospital Universitário de Zurique na Suíça. Descubra mais sobre nosso novo equipamento <a href="http://www3.gehealthcare.com/en/Products/Categories/PET-CT/PET-CT_Scanners/Discovery_PET-CT_600" target="_blank">clicando aqui</a>.
+                                <h4 class="innerTitulo" > NOSSA HISTÓRIA</h4>
+                                <p >
+                                    A Cintipraxis (medicina nuclear e imagem molecular), é uma clínica especializada na área de Medicina Nuclear, tendo o início das suas atividades no ano de 1999 na cidade de Fortaleza. Foi instituída por um grupo médico de especialistas em medicina nuclear com o objetivo de oferecer à comunidade o que há de mais moderno nos procedimentos diagnósticos e terapêuticos, prezando sempre no atendimento humanizado com segurança, tranquilidade e qualidade.
                                 </p>
 
-                                <h4 class="innerTitulo">Ventri - Cintilografia Miocárdica Dedicada</h4>
-                                <p>
-                                    Equipamento dedicado à Cintilografia de Perfusão Miocárdica. Ele proporciona conforto e rapidez inigualáveis. Os estudos são adquiridos na metade do tempo dos equipamentos convencionais. Ao mesmo tempo proporciona imagens de mais qualidade e precisão para um diagnóstico mais confiável. Saiba mais sobre a GE Ventri <a href="http://www3.gehealthcare.com/en/Products/Categories/Nuclear_Medicine/Cardiac_Cameras/Ventri" target="_blank">clicando aqui</a>.
+                                <p style="padding-bottom: 15px;">
+                                    A Clínica Cintipraxis possui uma estrutura ampla e bem localizada na torre saúde do complexo São Mateus que também está integrado ao Hospital OTO Santos Dumont (antigo hospital São Mateus), visando proporcionar segurança e qualidade aos pacientes durante a realização dos exames. Atuamos com uma equipe interdisciplinar perfeitamente ajustada às normas de radioproteção e padrões da Comissão Nacional de Energia Nuclear (CNEN).
                                 </p>
 
-                                <h4 class="innerTitulo">Cintilografia de Perfusão Miocárdica - Repouso e Esforço</h4>
+                                <h4 class="innerTitulo">O QUE É MEDICINA NUCLEAR E PARA QUE SERVE?</h4>
                                 <p>
-                                    A doença coronariana é a principal causa de morte no Brasil. Ela geralmente é causada pelo depósito progressivo de gordura nas
-                                    paredes dos vasos sanguíneos, o que causa um estreitamento das coronárias e reduz a irrigação sanguínea do músculo do coração.
+                                    A Medicina Nuclear é uma especialidade médica que por meio de técnicas indolores e seguras, realiza exames diagnósticos e tratamentos utilizando quantidades mínimas de substâncias radioativas (chamadas de radiofármacos e/ou radiotraçadores) permitindo a avaliação do comportamento metabólico dos mais diversos órgãos do corpo para a obtenção de informações específicas, facilitando o diagnóstico das diversas doenças.
                                 </p>
-
                                 <p>
-                                    Esta redução pode afetar a função do coração e, algumas vezes, causar “ataques cardíacos”. Alguns dos sintomas comuns são dor
-                                    ou desconforto (aperto) no peito e “falta de ar”. Entretanto, estes sintomas nem sempre são causados por doenças do coração. Além
-                                    disso, alguns pacientes com doença coronariana podem não apresentar sintomas. A Cintilografia de Perfusão Miocárdica e o teste
-                                    ergométrico são exames comuns usados pelos médicos para diagnosticar se há obstrução significativa das coronárias e para avaliar a
-                                    sua severidade de maneira “não-invasiva”.
+                                    Os exames utilizados na medicina nuclear são as cintilografias convencionais, a tomografia por emissão de pósitrons (PET/CT) e tomografias por emissão de fóton único (SPECT).
                                 </p>
                                 <!--<div class="slider" id="sliderSobre">
                                     <div class="item"> <img src="<?php bloginfo( 'template_url' ); ?>/img/bannerContato.png" /></div>
@@ -80,23 +63,21 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <h4 class="innerTitulo">Missão</h4>
-                                <p>Atuar em Medicina Nuclear com excelência, garantindo aos pacientes diagnóstico e tratamento com segurança, rapidez e qualidade.
-</p>
+                                <p>Atuar em Medicina Nuclear com excelência, garantindo aos pacientes diagnóstico e tratamento com segurança, rapidez e qualidade.</p>
                             </div>
                             <div class="col-md-4">
                                 <h4 class="innerTitulo">Visão</h4>
-                                <p>Garantir a posição de referência em Medicina Nuclear no estado do Ceará, com tecnologia de ponta e técnicas avançadas em diagnóstico e tratamento.
-</p>
+                                <p>Garantir a posição de referência em Medicina Nuclear no estado do Ceará, com tecnologia de ponta e técnicas avançadas em diagnóstico e tratamento.</p>
                             </div>
                             <div class="col-md-4">
                                 <h4 class="innerTitulo">Valores</h4>
                                 <ul style="padding-inline-start: 20px;">
-                                    <li>Comprometimento</li>
-                                    <li>Ética</li>
-                                    <li>Honestidade</li>
-                                    <li>Atendimento diferenciado e humanizado</li>
-                                    <li>Respeito</li>
-                                    <li>Credibilidade</li>
+                                    <li style="color:#838080;">Atendimento diferenciado e humanizado</li>
+                                    <li style="color:#838080;">Comprometimento</li>
+                                    <li style="color:#838080;">Ética</li>
+                                    <li style="color:#838080;">Honestidade</li>
+                                    <li style="color:#838080;">Respeito</li>
+                                    <li style="color:#838080;">Credibilidade</li>
                                 </ul>
                             </div>
                         </div>
@@ -144,7 +125,7 @@
                                     <a href="#" class="btn btn-principal text-center" data-toggle="modal" data-target="#mTrabalheConosco">Todos os exames</a>
                                 </li>-->
                                 <li>
-                                    <a href="#" class="btn btn-principal text-center" data-toggle="modal" data-target="#mAgendaExame">Agende seu exame</a>
+                                    <a href="https://api.whatsapp.com/send/?phone=5585991761203&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-principal text-center">AGENDE SEU EXAME</a>
                                 </li>
                                 <!--<li>
                                     <a href="#" class="btn btn-principal text-center" data-toggle="modal" data-target="#">Ver status de exame</a>
@@ -163,44 +144,32 @@
                 <div class="col-md-12">
                     <div class="section-title center-block text-center">
                         <h3>Convênios</h3>
-                        <p>Procurando seu convenio?</p>
+                        <p>Procurando seu convênio?</p>
                     </div>
                     <div class="container innerSection">
                         <div class="row sliderConvenios">
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/aeronautica.jpg" alt="Aeronautica"></div>
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/albert-sabin.jpg" alt="Hospital Infantil Albert Sabin"></div> -->
-                           <!--<div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/amil.jpg" alt="Amil"></div>-->
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/Apcef.jpg" alt="Apcef"></div> -->
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/assefaz.jpg" alt="Fundação Assefaz"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/bradesco-saude.jpg" alt="Bradesco Saúde"></div>
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/caace.jpg" alt="CAACE"></div> -->
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/cafaz.jpg" alt="Cafaz"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/camed.jpg" alt="Camed"></div>
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/capesesp.jpg" alt="Capesesp"></div> -->
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/cassi.jpg" alt="Cassi"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/fachesf.jpg" alt="Fachesf"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/famed.jpg" alt="Famed"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/funcef.jpg" alt="Funcef"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/fusex.jpg" alt="Fusex"></div>
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/gama-saude.jpg" alt="Gama Saúde"></div> -->
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/gamec.jpg" alt="Gamec"></div> -->
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/geap.jpg" alt="Geap"></div>
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/golden.jpg" alt="Golden Cross"></div> -->
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/hapvida.jpg" alt="Hapvida"></div>
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/hgf.jpg" alt="HGF"></div> -->
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/hgwa.jpg" alt="HGWA"></div> -->
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/hospital-messejana.jpg" alt="Hospital Messejana"></div> -->
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/ipm.jpg" alt="IPM"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/issec.jpg" alt="Issec"></div>
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/life-cropped.jpg" alt="Life Cropped"></div> -->
-                           <!-- <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/mediservice.jpg" alt="Mediservice"></div> -->
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/petrobras.jpg" alt="Petrobras"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/postal-saude.jpg" alt="Postal Saúde"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/saude-pas.jpg" alt="Saúde Pas"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/sulamerica.jpg" alt="Sulamérica"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/sus.jpg" alt="SUS"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/unimed.jpg" alt="Unimed"></div>
-                           <div class="col-md-2 item"><img width="150px" src="<?php bloginfo('template_url') ?>/img/convenios/vale-saude.jpg" alt="vale-saude"></div>
+                           <div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/FUNSA.jpeg" alt="Aeronautica"></div>
+						   <div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/ASSEFAZ.jpeg" alt="Assefaz"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/BCSAUDE.jpeg" alt="BC Saúde"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/BESTSENIOR.jpeg" alt="Best Senior"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/BRADESCO-SAUDE.jpeg" alt="bradesco Saúde"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/CAIXASAUDE.jpeg" alt="Cixa Saúde"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/CASSI.jpeg" alt="Cassi"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/CAMED.jpeg" alt="CAMED"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/CAPESESP.jpeg" alt="Capesesp"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/CAFAZ.jpeg" alt="CAFAZ"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/FAMED.jpeg" alt="FAMED"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/GEAP.jpeg" alt="GEAP"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/FUSEX.jpeg" alt="FUSEX"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/FACHESF.jpeg" alt="FACHESF"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/HAPVIDA-1.jpeg" alt="HAPVIDA"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/ISSEC.jpeg" alt="ISEEC"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/IPM.jpeg" alt="IPM"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/SAOCAMILO.jpeg" alt="São Camilo"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/PETROBRAS.jpeg" alt="Petrobras"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/POSTALSAUDE.jpeg" alt="Postal Saúde"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/SULAMERICA.jpeg" alt="SulAmérica"></div>
+							<div class="col-md-2 item"><img width="150px" height="150px" src="https://www.cintipraxis.com.br/wp-content/uploads/2024/08/logo-unimed-1.jpg" alt="Unimed"></div>
                         </div>
                     </div>
                 </div>
@@ -213,7 +182,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title center-block text-center">
-                        <h3>Nossa equipe</h3>
+                        <h3>Corpo Clínico</h3>
                         <p>Conheça um pouco mais da equipe que forma a Cintipraxis</p>
                     </div>
                     <div class="container innerSection">
@@ -274,10 +243,10 @@
         </div>
     </section>
 
-    <section class="como-chegar" id="como-chegar">
+    <!-- <section class="como-chegar" id="como-chegar"style="display:none !important;">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" >
                     <div class="section-title center-block text-center">
                         <h3>Como chegar</h3>
                         <p>Instruções</p>
@@ -314,7 +283,7 @@
                 </div>
             </div>            
         </div>
-    </section>
+    </section> -->
 
     <section class="contato" id="contato">
         <div class="container">
@@ -330,17 +299,15 @@
                                 <?= do_shortcode('[contact-form-7 id="15" title="Contato"]')  ?>
                             </div>
                             <div class="col-md-6">
-                                <h4>Quer trabalhar conosco?</h4>
-                                <div class="text-center">
-                                    <a href="#" class="btn btn-principal text-center" data-toggle="modal" data-target="#mTrabalheConosco">Envie seu currículo</a>
-                                </div>
+
                                 <div id="mapa">
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.358222680642!2d-38.52851085703472!3d-3.7318615980801173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c746296da2cac1%3A0xd97f9dc6c26a3276!2sCintipraxis+Medicina+Nuclear!5e0!3m2!1spt-BR!2sbr!4v1512049978037" width="100%" height="310" frameborder="0" style="border:0" allowfullscreen></iframe>
                                 </div>
                                 <p>
-                                    Cintipraxis <br>
-                                    Fortaleza, Ceará <br>
-                                    Torre Saúde (térreo) - Av. Santos Dumont, 5753 - Papicú - (85) 3262-1212<br>
+                                    Cintipraxis <br/>
+                                    Av. Santos Dumont, 5753, Papicu. CEP: 60.175-047, Fortaleza – CE<br/>
+									Complexo São Mateus – Torre Saúde, Térreo<br/>
+									Telefone (85) 3262.1212 WhatsApp (85) 99176.1203<br/>
                                     Segunda a quinta de 07:00 as 18:00 e na sexta de 07:00 as 17:00
                                 </p>
                             </div>
