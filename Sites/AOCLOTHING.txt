@@ -3,13 +3,13 @@ AOCLOTHING
 Categorias
 -
 
-Formas de entrega - Loja física
+Formas de entrega - Loja física  ok
 - 
 
-Meio de Pagamento - Nuvem pago - Conta bancária
+Meio de Pagamento - Nuvem pago - Conta bancária  ok 
 - 
 
-WhatsApp - Adicionar telefone?
+WhatsApp - Adicionar telefone?  ok 
 - 
 
 Integração com ERP - Marcar data com Gabriel
@@ -22,6 +22,6 @@ Integração com ERP - Marcar data com Gabriel
 Retirar borda das Categorias
 Categorias - Verificar slides rotativos
 
-Diminuir logo mobile
+Diminuir logo mobile  -  ok
 
 Verificar slides automáticos no banner mobile
