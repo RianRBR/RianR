@@ -1,0 +1,20 @@
+#Mota Machado (SEGUNDA-FEIRA)
+
+    Homolog: https://clientes.atratis.com.br/dev/motamachado/
+    Site: https://motamachado.com.br/
+
+    * Hostgator
+        marketing@motamachado.com.br
+        M07@machado
+
+    RD Station - TAGS PRODUTOS MOTA: (Conta RD Gabriel)
+    
+    BIOSPHERE: /imoveis/biosphereconceito/
+    ROOFTOP: /imoveis/rooftop-canuto-1000/
+    MIRARE: /imoveis/mirarecollection/
+    TANGO: /imoveis/tango/
+    ELEV: /imoveis/elevjardinsdefatima/
+    FLORA: /imoveis/flora/
+    AL MARE: /imoveis/al-mare-sao-marcos-design/
+    THE PALLACE: /imoveis/the-pallace/
+    ENTRE RIOS: /imoveis/entre-rios/
