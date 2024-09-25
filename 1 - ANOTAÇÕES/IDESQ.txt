@@ -1,0 +1,77 @@
+ENTREGAR FIGMA DIA 04/10
+
+
+
+Parceria de impresas para formar jovem aprendiz
+
+Governo do estado - Programa primeiro passo
+Programa de aprendizado com as impresas - Sim intermediador
+
+Focos do sites
+    Fazer com as empresas contratem e tenham todas as informações
+    Inscrição   
+
+
+
+https://drive.google.com/drive/folders/1xE3uKUTSQEFn_tH6cm77GRNUNRhEmQdC
+
+https://docs.google.com/document/d/12LzInLXv7iR_9o4rwyIqMHAbApOY7EtTllBBSOvinvg/edit
+
+Projetos
+
+Pegar referências de outros sites
+
+    Notícias: Ajustar destaques colocar mais para cima
+        Poder diferenciar o título da home com a da interna
+    
+    Dar destaque nas fotos dos destaques da home
+
+    Deixar um tamanho padrão para o card na página de Notícias
+
+    Adicionar carrossel nos detaques das notícias da home
+
+    Verificar a possibilidade de utilizar os blocos como o ACF
+
+    Retirar Prêmio Acolher -> Virar banner de chamada
+
+    Mudar formato de depoimentos
+
+    Ajustar Logos
+
+    Verificar linha do tempo no contrato
+
+    Retirar Megabanner nas internas das páginas
+
+
+    ----------
+
+    Mudar formato
+        Adicionar foto de quipe completa
+        Focar na gestão 
+            Diretoria Executiva
+            Conselho fiscal
+
+    Linha do tempo: Pensar em um novo formato (virar uma página)
+
+    Adicionar npumero de whatsapp em páginas específicas(Dois npumeros)
+
+
+
+
+    *Funcionalidades*
+
+    - Banners (com possibilidade de ser rotativo ou não)
+
+    - o que é o idesq (com uma linha do tempo resumida linha do tempo). 
+
+    - Notícias (rotativo)
+
+    - Parceiros
+
+    - Impacto
+
+    - Missão, visão, valor
+
+    - projetos (rotativo)
+
+    - Como doar
