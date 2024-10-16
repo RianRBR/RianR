@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-12">
+       <h2>Deixe a sua mensagem</h2>
+    </div>
+    <div class="col-12 ">
+        <div class="form-group">
+            <label>Sou um:*</label>[select* Sou um class:form-control include_blank "Colaborador(a)|#" "Terceiro(a)|#" "Advogado(a) Associado(a)|#"]
+        </div>
+    </div>
+    <div class="col-12 ">
+        <div class="form-group">
+            <label>Gostaria de solicitar:*</label>[select* Solicitar class:form-control include_blank "Confirmação de tratamento dos dados|#" "Acesso aos dados|#" "Correção de dados|#" "Eliminação dos dados|#" "Restringir tratamento|#" "Portabilidade de dados|#" "Informações de compartilhamento de dados|#" "Informações sobre consentimento|#" "Revogar meu consentimento|#"]
+        </div>
+    </div>
+
+    <div class="col-12 ">
+        <div class="form-group">
+            <label>Nome completo:*</label>[text* nome class:form-control placeholder "Digite seu nome"]
+        </div>
+    </div>
+    <div class="col-12 ">
+        <div class="form-group">
+            <label>E-mail:*</label>[email* email class:form-control placeholder "Digite seu e-mail"]
+        </div>
+    </div>
+    <div class="col-12 ">
+        <div class="form-group">
+            <label>Telefone:*</label>[text* telefone class:form-control id:telefone placeholder "Digite seu telefone"]
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="form-group">
+            <label>Mensagem</label>[textarea mensagem class:form-control mensagem placeholder "Digite sua mensagem aqui."]
+        </div>
+    </div>
+
+    <div class="col-12 final-line">
+        [acceptance acceptance-565] Li e aceito os termos de <a href="https://clientes.atratis.com.br/dev/sangati/aviso-e-declaracao-de-privacidade-de-dados/"><u>Política de Privacidade.</u></a> [/acceptance]
+        [submit class:bt__padrao "Enviar Mensagem"]
+    </div>
+
+</div>
