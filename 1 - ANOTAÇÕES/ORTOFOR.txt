@@ -1,0 +1,37 @@
+
+--Luana--
+
+Escolher os produtos para estarem em destaque na home:
+    Enviar o link do produto, Mensagem para produtos, utilizar mesmo número do site.
+
+
+
+
+
+--Rian--
+
+    Enviar resolução ideal para Megabanner da home, Desktop e Mobile
+
+
+    <div class="titulo">
+    <img src="https://hospitalsantacecilia.org.br/wp-content/uploads/2022/01/phone.png" alt="icon" />
+    <h4>Contatos</h4>
+</div>
+<ul>
+    <li>
+        <b>Hospital:</b> (24) 2102-0001
+    </li>
+    <li>
+       <b>Centro de Diagnósticos:</b> 
+       <br> (24) 99304-9639 (somente WhatsApp )
+    </li>
+    <li>
+        <b>Centro Médico:</b> (24) 2102-0088
+    </li>
+
+    <li>
+        <b>Orçamentos:</b> (24) 99304-7173 (somente WhatsApp)
+        
+    </li>
+
+</ul>
