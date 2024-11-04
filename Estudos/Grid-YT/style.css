@@ -1,5 +1,12 @@
 @import url(reset.css);
 
+
+:root{
+    --branco: #ffffff;
+    --cinca-pesquisa: #cccccc;
+}
+
+
 body{
     background-color: #f6f6f6;
 }
@@ -11,7 +18,7 @@ body{
 }
 
 .nav{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     display: flex;
     width: 1100px;
     height: 56px;
@@ -39,8 +46,8 @@ body{
 }
 
 #divBusca{
-    background-color:#ffffff;
-    border:solid 1px #cccccc;
+    background-color:var(--branco);
+    border:solid 1px var(--cinca-pesquisa);
     border-radius:2px;
     width:300px;
     display: flex;
@@ -59,14 +66,46 @@ body{
     width:260px;
   }
 .container-videos{
-    background-color: black;
     display: flex;height: auto;
 }
 .sidebar{
     width: 20%;
-    background-color: wheat;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    text-decoration: none;
+    list-style-type: none
 }
+.sidebar-container{
+    width: auto;
+    height: 34px;
+    margin: 10px 20px;
+    
+}
+.sidebar img{
+    margin-right: 10px;
+}
+.sidebar a{
+    color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+
 .container-grid{
     width: 80%;
+    height: auto;
     background-color: rgb(83, 53, 51);
+    display: grid;
+    
+}
+.grid-videos{
+    display: grid;
+    grid-column: 1fr 1fr 1fr 1fr;
+    grid-row: 200px;
+    background-color: tomato;
 }
