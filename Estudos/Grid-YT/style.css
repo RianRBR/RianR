@@ -16,6 +16,7 @@ body{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 
 .nav{
@@ -27,21 +28,27 @@ body{
 .menu{
     display: inline-flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu-yt{
+    display: flex;
+    align-items: center;
 }
 .topo {
     align-content: center;
+    width: 100%;
+    padding: 0 20px;
 }
 .widgets{
     display: flex;
     align-items: center;
-    margin-left: 30%;
+    
 }
 .widgets img{
     margin-left: 15px;
 }
-.menuzinho{
-    padding-left: 20px;
-}
+
 .icone{
     padding-left: 20px;
 }
@@ -53,7 +60,7 @@ body{
     width:300px;
     display: flex;
     align-items: center;
-    margin-left: 74%;
+    
   }
   
   #txtBusca{
