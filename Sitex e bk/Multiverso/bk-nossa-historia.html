@@ -1,0 +1,251 @@
+<?php
+
+/**
+ * Template Name: Nossa História
+ */
+get_header(); ?>
+
+<main>
+  <section id="destaque">
+    <div class="mask">
+      <div class="info">
+        <h1><?php the_title(); ?></h1>
+        <p>
+          <strong>A Professora Rosemary Pontes</strong> é fundadora do Colégio Universo e aos 19 anos, sonhou
+          em
+          proporcionar aos alunos do bairro Padre Andrade, um ensino acessível e de qualidade.
+        </p>
+        <a href="#myVideo" class="bt" data-fancybox><i class="fa-solid fa-play"></i> assistir vídeo completo</a>
+        <span class="bounce-3"><img src="<?php bloginfo('template_url'); ?>/assets/img/move.png" alt="Descer"></span>
+
+        <video width="640" height="320" controls id="myVideo" style="display:none;">
+          <!-- <source src="<?php bloginfo('template_url'); ?>/assets/videos/teaser_inst.mp4" type="video/mp4"> -->
+          <source src="<?php bloginfo('template_url'); ?>/assets/videos/video-institucional-multiverso.mp4"
+            type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <video autoplay loop muted playsinline>
+      <source src="<?php bloginfo('template_url'); ?>/assets/videos/teaser_inst.mp4" type="video/mp4">
+      <source src="<?php bloginfo('template_url'); ?>/assets/videos/teaser_inst.ogg" type="video/ogg" />
+    </video>
+  </section>
+
+  <section id="viemos">
+    <div class="wrapper">
+      <p>
+        O Colégio Universo foi fundado há quase 40 anos, fruto do propósito e vocação genuína da
+        <strong>Professora
+          Rosemary Pontes</strong> de promover educação de qualidade para os moradores do bairro Padre Andrade
+        em
+        Fortaleza, Ceará.<br><br>
+
+        A Professora Rosemary sempre acreditou na proximidade entre a escola e as famílias como fortalecimento
+        da
+        educação, por isso o <strong>Colégio Universo</strong> atua no segmento de escolas de tamanho médio para
+        não
+        perder o tratamento próximo e pessoal junto às famílias e alunos – um de seus principais valores e
+        diferenciais.
+        O Colégio Universo investe continuamente no treinamento e capacitação de professores, programas de
+        formação
+        socioemocionais, em tecnologia e transformação digital, material didático e sistemas de ensino de
+        referência e
+        na qualidade da sua estrutura física. Possui, ainda, práticas de gestão diferenciadas, sempre pautadas
+        pela
+        ética.<br><br>
+
+        Há mais de 10 dez anos, o filho da Professora Rosemary, <strong>Fernando Pontes</strong> começou a
+        trabalhar na
+        escola assumindo a liderança administrativa e imprimindo eficiência de gestão operacional ao negócio.
+        Com o
+        sonho de replicar esse modelo de sucesso para outras escolas, Fernando criou uma rede de ensino a fim de
+        dar
+        acesso à <strong>educação de qualidade</strong> a muitas famílias e assim surgiu a Multiverso Educação.
+      </p>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="wrapper">
+      <h2>Linha do tempo</h2>
+      <!-- <img src="https://multiversoeducacao.com.br/wp-content/uploads/2023/05/novo-tempo.png" alt=""> -->
+      <!--       <img src="https://multiversoeducacao.com.br/wp-content/uploads/2023/07/linha-1.png" alt=""> -->
+      <?php $linha_do_tempo = get_field("linha_do_tempo", "option"); ?>
+      <img src="<?php echo $linha_do_tempo["url"]; ?>" alt="">
+
+    </div>
+  </section>
+  <!-- <section id="timeline">
+        <div class="wrapper">
+            <h2>Linha do tempo</h2>
+
+            <div class="owl-carousel owl-theme timeline">
+                <div class="item">
+                    <p>1984<br> <strong>Fundação do<br> Colégio Universo Colorido</strong></p>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/i1.png" alt="Icon">
+                </div>
+                <div class="item">
+                    <p>1989<br> <strong>Consolidação do<br> Fundamental I</strong></p>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/i2.png" alt="Icon">
+                </div>
+                <div class="item">
+                    <p>1998<br> <strong>Consolidação do<br> Fundamental II</strong></p>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/i3.png" alt="Icon">
+                </div>
+                <div class="item">
+                    <p>2010<br> <strong>Implantação do<br> Ensino Médio</strong></p>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/i4.png" alt="Icon">
+                </div>
+                <div class="item">
+                    <p>2013<br> <strong>Implantação do<br> Tempo Integral</strong></p>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/i5.png" alt="Icon">
+                </div>
+                <div class="item">
+                    <p>2016<br> <strong>Parceria com o<br> Sistema de Ensino</strong></p>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/i6.png" alt="Icon">
+                </div>
+                <div class="item">
+                    <p>2018<br> <strong>Implantação do<br> Programa Socioemocional</strong></p>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/i7.png" alt="Icon">
+                </div>
+                <div class="item">
+                    <p>2019<br> <strong>Inserção de uma<br> Plataforma Digital</strong></p>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/i8.png" alt="Icon">
+                </div>
+                <div class="item">
+                    <p>2020<br> <strong>Implantação do<br> Novo Ensino Médio</strong></p>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/i9.png" alt="Icon">
+                </div>
+                <div class="item">
+                    <p>2022<br> <strong>Criação da<br> Multiverso Educação</strong></p>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/i10.png" alt="Icon">
+                </div>
+                <div class="item">
+                    <p>2022<br> <strong>Aquisição do<br> Centro Estudantil<br> Sousa Correia</strong></p>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/i11.png" alt="Icon">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+  <img src="<?php bloginfo('template_url'); ?>/assets/img/graf2.png" alt="Graf" class="gf3">
+  <!-- <section id="bannerin" style="background-image: url(<?php bloginfo('template_url'); ?>/assets/img/banner-equipe.jpg);">
+            <h1><?php the_title(); ?></h1>
+        </section> -->
+
+  <img src="<?php bloginfo('template_url'); ?>/assets/img/graf1.png" alt="Graf" class="gf1">
+
+  <img src="<?php bloginfo('template_url'); ?>/assets/img/graf2.png" alt="Graf" class="gf2">
+
+  <!-- INICIO QUEM SOMOS-->
+  <section id="eq1" class="eqs">
+    <div id="nosso-time" class="wrapper">
+      <h2>Nosso Time</h2>
+    </div>
+    <div class="wrapper">
+      <div class="text" style="padding-top: 80px;">
+        <h3>Rosemary Pontes</h3>
+        <small>Diretora Pedagógica</small>
+        <p>
+          Fundadora do Colégio Universo. Aos 19 anos, sonhou em proporcionar aos alunos do bairro Padre
+          Andrade, um ensino acessível e de qualidade.<br><br>
+          Formada em Pedagogia e atuando integralmente como Diretora Pedagógica, dedicando-se todos os dias à
+          <strong>transformar jovens em grandes líderes</strong>, legado que já possui quase 40 anos.
+        </p>
+      </div>
+      <div class="thumb">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/eq1.png" alt="Professora Rosemary">
+      </div>
+    </div>
+  </section>
+  <section id="eq2" class="eqs">
+    <div class="wrapper">
+      <div class="text" style="padding-top: 60px;">
+        <h3>Fernando Pontes</h3>
+        <small>CEO - Diretor Executivo</small>
+        <p>
+          Fundador da Rede Multiverso Educação. Fernando vem ao longo de 10 anos como responsável pelo projeto
+          de evolução empresarial e continuidade do legado do Colégio Universo, trazendo um novo olhar de
+          <strong>gestão e organização</strong> para a escola.<br><br>
+
+          Formado em Administração de Empresas e com MBA Executivo, busca perpetuar o legado educacional da
+          sua família, como também, ajudar outras instituições a darem continuidade ao projeto com uma gestão
+          eficiente e de qualidade.
+
+
+
+        </p>
+      </div>
+      <div class="thumb">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/eq2.png" alt="Fernando">
+      </div>
+    </div>
+  </section>
+  <section id="eq3" class="eqs">
+    <div class="wrapper">
+      <div class="text" style="padding-top: 50px;">
+        <h3>Nortpool Furlani</h3>
+        <small>Diretor de Operações</small>
+        <p>
+          Diretor de Operações. Executivo com mais de 20 anos de experiência em marketing, varejo em
+          negócios multinacionais de primeira linha no Brasil e no exterior como Nike, Coca-Cola e Bacardi.
+          Nortpool é formado em Engenharia Civil pela Universidade Federal do Ceará e tem MBA pela IESE
+          Business School de Barcelona.<br><br>
+
+          Nortpool se juntou ao Multiverso Educação por acreditar que marcas têm um papel de <strong>construir legados e
+            transformar vidas</strong> através de propósitos genuínos.
+
+        </p>
+      </div>
+      <div class="thumb">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/eq3.png" alt="Nortpool">
+      </div>
+    </div>
+  </section>
+  <section id="eq4" class="eqs">
+    <div class="wrapper">
+      <div class="text" style="padding-top: 50px;">
+        <h3>Marco Barros</h3>
+        <small>Diretor Financeiro</small>
+        <p>
+          Com mais de 10 anos de experiência em finanças, Marco desenvolveu habilidades em análises de viabilidade,
+          avaliação de empresas e captação de recursos. Como consultor, assessorou o Grupo Marquise, sendo responsável
+          por modelagem financeira e consultoria buy-side e tem experiência em parcerias público-privadas (PPPs), bem
+          como em planos de negócios. É formado em Engenharia Aeronáutica pelo Instituto Tecnológico de Aeronáutica
+          (ITA).<br><br>
+
+          Sua chegada à Multiverso representa assertividade e sinergia em nossos propósitos, contribuindo para garantir
+          que a expansão da empresa seja sustentável e realizada em todas as frentes.
+
+        </p>
+      </div>
+      <div class="thumb">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/marco-barros.png" alt="Marco Barros">
+      </div>
+    </div>
+  </section>
+  <!-- <section id="eq4" class="eqs">
+    <div class="wrapper">
+      <div class="text" style="padding-top: 70px;">
+        <h3>Bruno Alcântara</h3>
+        <small>Diretor Financeiro</small>
+        <p>
+          Profissional com mais de 17 anos de atuação no mercado, sendo 9 anos em consultoria empresarial na
+          Deloitte e também atuando nos setores varejo, educacional e bancário.<br><br>
+
+          Com atuação forte e especializada, Bruno é formado em Administração de Empresas e com MBA em
+          finanças e controladoria. Juntou-se ao Multiverso acreditando que é possível levar para mais alunos
+          uma <strong>educação acessível e com qualidade</strong>, projeto que faz o Multiverso ser único.
+
+
+
+
+        </p>
+      </div>
+      <div class="thumb">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/eq4.png" alt="Bruno">
+      </div>
+    </div>
+  </section> -->
+</main>
+<?php get_footer(); ?>
