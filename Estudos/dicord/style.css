@@ -19,7 +19,9 @@ p{
     font-weight: 400;
     color: var(--preto-claro);
 }
-
+img{
+    object-fit: cover;
+}
 .container{
     width: auto;
     max-width: 1280px;
@@ -86,6 +88,7 @@ body{
     color: var(--preto-claro);
     background-color: var(--branco);
     transition: 500ms;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
 
 }
@@ -113,12 +116,14 @@ body{
     color: var(--branco);
     background-color: var(--preto-claro);
     transition: 500ms;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
 }
 .abrir:hover{
     color: var(--preto-claro);
     background-color: var(--branco);
     transition: 500ms;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
 }
 
@@ -195,14 +200,17 @@ footer{
     }
 
     .container h1 {
-        font-size: 36px;
+        font-size: 46px;
     }
 
     .textos p {
         font-size: 14px;
+        margin: 10px 20px;
+
     }
     img{
-        max-width: 570px;
+        max-width: 95vw;
+        
     }
 
 
@@ -211,28 +219,39 @@ footer{
         padding-top: 100px;
     }
 
-    .texto-imagem,
-    .texto-imagem-invert{
-        padding: 20px;
-    }
-
     .container-banner {
-        width: 567px;
+        width: 100vw;
         padding-top: 150px;
+    }
+    .botoes{
+        flex-direction: column;
+        width: fit-content;
+        align-items: center;
+        margin: auto;
+    }
+    .baixar, .abrir{
+        width: 100%;
     }
     .mega-banner{
         text-align: center;
-        width: 567px;
+        width: 100vw;
     }
     .banner-img{
-        width: 698px;
+        width: 100vw;
         max-height:458px;
     } 
     .texto-imagem,
     .texto-imagem-invert{
         padding: 30px 50px;
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
+        
+    }
+    .texto-imagem-texto{
+        width: 330px;
+    }
+    .final{
+        padding-top: 7%;
     }
 }
 
@@ -278,7 +297,10 @@ footer{
         margin-bottom: 20px;
     }
     img{
-        max-width: 760px ;
+        max-width: 620px ;
+    }
+    .btn-padrao{
+        padding: 20px 40px;
     }
 
     .container h1 {
@@ -298,7 +320,7 @@ footer{
     .texto-imagem,
     .texto-imagem-invert{
         padding: 30px 50px;
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
     }
 
