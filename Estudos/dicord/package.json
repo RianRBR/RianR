@@ -1,0 +1,19 @@
+{
+  "name": "rianr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rian Reuber",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RianRBR/RianR.git#609ee83b444d1a573b2c96da1af5b302a3266c5f"
+  },
+  "bugs": {
+    "url": "https://github.com/RianRBR/RianR/issues"
+  },
+  "homepage": "https://github.com/RianRBR/RianR/tree/609ee83b444d1a573b2c96da1af5b302a3266c5f#readme",
+  "description": ""
+}
