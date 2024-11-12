@@ -35,7 +35,10 @@ img{
     font-size: 56px;
     font-weight: 400;
 }
-
+.textos{
+    position: relative;
+    z-index: 999;
+}
 .textos p{
     color: var(--branco);
     font-family: "Open Sans";
