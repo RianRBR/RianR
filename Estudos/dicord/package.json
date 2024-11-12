@@ -15,5 +15,8 @@
     "url": "https://github.com/RianRBR/RianR/issues"
   },
   "homepage": "https://github.com/RianRBR/RianR/tree/609ee83b444d1a573b2c96da1af5b302a3266c5f#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
 }
