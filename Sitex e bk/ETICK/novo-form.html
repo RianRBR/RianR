@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-12">
+      <h2 class="titulo__secao">Deixe a sua mensagem</h2>
+    </div>
+    <div class="col-12">
+        <div class="form-group">
+            <label>Nome</label>[text* nome class:form-control placeholder "Digite seu nome"]
+        </div>
+    </div>
+    <div class="col-12 col-lg-6">
+        <div class="form-group">
+            <label>E-mail</label>[email* email class:form-control placeholder "Digite seu e-mail"]
+        </div>
+        <div class="form-group">
+            <label>Empresa</label>[text* empresa class:form-control placeholder "Qual sua empresa?" ]
+        </div>
+    </div>
+    <div class="col-12 col-lg-6">
+        <div class="form-group">
+            <label>Telefone</label>[tel* telefone class:form-control id:telefone placeholder "Digite seu telefone"]
+        </div>
+        <div class="form-group">
+            <label>Segmento</label>[select* segmento class:form-control include_blank "Bebidas" "Alimentício" "Cosméticos" "Farmacêutica" "Higiene" "Automotivo" "Têxtil" "Outros"]
+        </div>
+      
+    </div>
+    <div class="col-12">
+      <div class="form-group">
+        <label>Mensagem</label>[textarea mensagem 40x4 class:form-control mensagem placeholder "Faça aqui uma breve descrição da sua solicitação:"]
+      </div>
+    </div>
+    <div class="col-12 final-line">
+        [acceptance acceptance-565] Li e aceito os termos de <a style="color:#ffffff" href="#"><u>Política de Privacidade.</u></a> 
+         [/acceptance]
+        [submit class:submit-btn "Enviar"]
+      </div>
+  </div>
+
+<script>
+    document.addEventListener('wpcf7mailsent', function(event) {
+        // Desabilita o botão de envio
+        var submitButton = event.detail.apiResponse.into.querySelector('.submit-btn');
+        if (submitButton) {
+            submitButton.setAttribute('disabled', 'disabled');
+        }
+    }, false);
+
+</script>
